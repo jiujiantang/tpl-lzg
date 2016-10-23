@@ -1,0 +1,250 @@
+.progect {
+    padding: 40px 0;
+    background: #F1F1F1;
+}
+.column {
+    width: 1040px;
+    height: 215px;
+    background: #F1F1F1;
+}
+.brand {
+    width: 810px;
+    height: 215px;
+    background: white;
+}
+.history {
+    width: 215px;
+    height: 215px;
+    background: green;
+    position: relative;
+}
+.column .brand .grid_top {
+    width: 726px;
+    height: 34px;
+    /*background: red;*/
+    margin: 0 auto;
+    margin-top: 13px;
+}
+.column .brand .con li {
+    float: left;
+}
+.column .brand .con a {
+    display: inline-block;
+    width: 270px;
+    height: 168px;
+    overflow: hidden;
+    position: relative;
+    background: black;
+}
+.column .brand .con img {
+    width: 270px;
+    height: 168px;
+    /*opacity: 0.4;*/
+}
+.column .brand .con .name0 {
+    width: 159px;
+    height: 63px;
+    position: absolute;
+    left: 55px;
+    top: 53px;
+}
+.column .brand .con .name1 {
+    width: 159px;
+    height: 64px;
+    position: absolute;
+    left: 55px;
+    top: 53px;
+}
+.column .brand .con .name2 {
+    width: 123px;
+    height: 64px;
+    position: absolute;
+    left: 68px;
+    top: 53px;
+}
+.column .brand .grid_top .icon {
+    width: 24px;
+    height: 22px;
+    margin-right: 8px;
+    vertical-align: middle;
+    display: inline-block;
+    background: url("../img/icon1_ie6.png") no-repeat 0 -88px;
+}
+.column .brand .grid_top strong {
+    font-size: 16px;
+    margin-right: 10px;
+    vertical-align: middle;
+    font-weight: bold;
+}
+.column .brand .grid_top .en {
+    font-size: 12px;
+    color: #bcbcbd;
+    font-variant: small-caps;
+    font-style: normal;
+}
+.column .history .text-l {
+    position: absolute;
+    top: 28px;
+    left: 75px;
+}
+.column .history .text-c {
+    position: absolute;
+    top: 28px;
+    left: 96px;
+}
+.column .history .text-r {
+    position: absolute;
+    top: 28px;
+    right: 80px;
+}
+.column .history .c {
+    position: absolute;
+    bottom: -15px;
+    left: -15px;
+    width: 0px;
+    height: 263px;
+    background: url("../img/awaken_cl.png") no-repeat;
+}
+.column .history .historyA {
+    width: 215px;
+    height: 215px;
+    position: absolute;
+
+}
+.column2 {
+    /*background: pink;*/
+    width: 1040px;
+    height: 256px;
+    margin-top: 40px;
+    background: white;
+
+}
+.column2 .fans {
+    float: left;
+    width: 207px;
+    height: 256px;
+    /*background: skyblue;*/
+}
+.column2 .lab {
+    float: right;
+    width: 816px;
+    height: 256px;
+    /*background: skyblue;*/
+}
+.column2 .fans .grid-top .tit {
+    padding: 17px 0px 9px;
+    margin: 0px 14px;
+    font-size: 18px;
+    color: #303030;
+    border-bottom: solid 1.5px #D8D8D8;
+}
+.column2 .fans .grid-top .tit .icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 20px;
+    padding-right: 8px;
+    background:  url("../img/icon1_ie6.png") no-repeat -121px -91px;
+}
+.column2 .fans .grid-top .tit strong {
+    font-weight: bold;
+}
+.column2 .fans .con li {
+    width: 207px;
+    height: 52px;
+    position: relative;
+    /*background: red;*/
+}
+.column2 .fans .con a {
+    height: 52px;
+    line-height: 52px;
+    display: block;
+    text-align: center;
+    color: #383541;
+    text-decoration: none;
+    font-size: 12px;
+}
+.column2 .fans .con i {
+    position: absolute;
+    margin-left: 50%;
+    left: -5.5px;
+    bottom: -5.5px;
+    z-index: 2;
+    display: inline-block;
+    width: 11px;
+    height: 11px;
+    background: url("../img/icon1_ie6.png") no-repeat -90px 0;
+}
+.column2 .fans .con a:hover {
+    background: #B49DDB;
+    color: white;
+}
+.column2 .lab .grid-top .tit {
+    padding: 17px 0px 9px;
+    margin: 0px 24px;
+    font-size: 18px;
+    color: #303030;
+    border-bottom: solid 1.5px #D8D8D8;
+}
+.column2 .lab .grid-top .tit .icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 20px;
+    padding-right: 8px;
+    background:  url("../img/icon1_ie6.png") no-repeat -90px -90px;
+}
+.column2 .lab .grid-top .tit strong {
+    font-weight: bold;
+}
+.column2 .lab .grid-top .tit .en{
+    font-size: 12px;
+    color: #bcbcbd;
+    font-variant: small-caps;
+    font-style: normal;
+}
+.column2 .lab .con {
+    width: 816px;
+    height: 208px;
+    /*background: red;*/
+}
+.column2 .lab .con li {
+    position: relative;
+    float: left;
+    width: 204px;
+    height: 209px;
+    background: #D7D7D7;
+}
+.column2 .lab .con .p1 {
+    position: absolute;
+    top: 0px;
+    width: 204px;
+    height: 209px;
+    background: red url("../img/lab_5.jpg") no-repeat;
+}
+.column2 .lab .con .p2 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 204px;
+    height: 209px;
+    background: red url("../img/lab_2.jpg") no-repeat;
+}
+.column2 .lab .con .p3 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 204px;
+    height: 209px;
+    background: red url("../img/lab_3.jpg") no-repeat;
+}
+.column2 .lab .con .pic1 {
+    position: absolute;
+    top: 19px;
+    left: 98px;
+}
+.column2 .lab .con .pic2 {
+    position: absolute;
+    left: 0;
+    top: 71px;
+}
