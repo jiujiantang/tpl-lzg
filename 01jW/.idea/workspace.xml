@@ -25,43 +25,25 @@
         <entry file="file://$PROJECT_DIR$/js/jwroot.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+              <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc;n#obj#0" expanded="false" />
-                <element signature="n#!!block;n#obj#0" expanded="false" />
                 <element signature="n#!!block;n#Student#0;n#!!block;n#obj#0" expanded="false" />
                 <element signature="e#228#269#0" expanded="false" />
                 <element signature="e#287#332#0" expanded="false" />
                 <element signature="e#432#681#0" expanded="false" />
                 <element signature="e#585#640#0" expanded="false" />
                 <element signature="n#!!doc;n#responsive#0" expanded="false" />
-                <element signature="n#!!block;n#responsive#0" expanded="false" />
                 <element signature="e#956#1062#0" expanded="false" />
                 <element signature="e#1091#1197#0" expanded="false" />
                 <element signature="e#1202#1309#0" expanded="false" />
-                <element signature="n#!!block;n#client#0" expanded="false" />
-                <element signature="e#1343#1569#0" expanded="false" />
                 <element signature="n#!!doc;n#merryGoRound#0" expanded="false" />
-                <element signature="n#!!block;n#merryGoRound#0" expanded="false" />
                 <element signature="n#!!doc;n#event#0" expanded="false" />
-                <element signature="n#!!block;n#event#0" expanded="false" />
-                <element signature="e#2020#2053#0" expanded="false" />
                 <element signature="n#!!doc;n#ret#0" expanded="false" />
-                <element signature="n#!!block;n#ret#0" expanded="false" />
                 <element signature="n#!!doc;n#getXY#0" expanded="false" />
-                <element signature="n#!!block;n#getXY#0" expanded="false" />
                 <element signature="e#2355#2664#0" expanded="false" />
                 <element signature="n#!!doc;n#getBoxXY#0" expanded="false" />
-                <element signature="n#!!block;n#getBoxXY#0" expanded="false" />
                 <element signature="n#!!doc;n#maoPao#0" expanded="false" />
-                <element signature="n#!!block;n#maoPao#0" expanded="false" />
-                <element signature="e#3263#3296#0" expanded="false" />
-                <element signature="e#3331#3369#0" expanded="false" />
-                <element signature="e#3402#3438#0" expanded="false" />
-                <element signature="n#!!block;n#maoPaoSecond#0" expanded="false" />
-                <element signature="e#3503#3536#0" expanded="false" />
-                <element signature="e#3571#3609#0" expanded="false" />
-                <element signature="e#3642#3678#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -87,10 +69,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="myAnimation.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="myAnimation.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.9896194">
+            <state vertical-scroll-proportion="0.0">
               <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
@@ -107,11 +89,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.9808917">
+              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -140,9 +122,9 @@
         <option value="$PROJECT_DIR$/demo/放大镜/放大镜.html" />
         <option value="$PROJECT_DIR$/demo/对话框拖拽/jWnb.js" />
         <option value="$PROJECT_DIR$/demo/对话框拖拽/1实现移动.html" />
+        <option value="$PROJECT_DIR$/js/jWnb.js" />
         <option value="$PROJECT_DIR$/js/jwroot.js" />
         <option value="$PROJECT_DIR$/test.html" />
-        <option value="$PROJECT_DIR$/js/jWnb.js" />
       </list>
     </option>
   </component>
@@ -154,10 +136,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="58" />
-    <option name="y" value="54" />
-    <option name="width" value="926" />
-    <option name="height" value="747" />
+    <option name="x" value="352" />
+    <option name="y" value="40" />
+    <option name="width" value="1037" />
+    <option name="height" value="661" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -234,64 +216,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="01jW" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="01jW" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="放大镜" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="01jW" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="01jW" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="放大镜" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="01jW" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="01jW" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="demo" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="对话框拖拽" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -302,7 +226,7 @@
     <property name="options.lastSelected" value="configurable.group.appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/ve" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
@@ -373,24 +297,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="54" width="926" height="747" extended-state="0" />
+    <frame x="352" y="40" width="1037" height="661" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0744921" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32284042" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.029250458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -434,40 +358,90 @@
           <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc;n#obj#0" expanded="false" />
-            <element signature="n#!!block;n#obj#0" expanded="false" />
             <element signature="n#!!block;n#Student#0;n#!!block;n#obj#0" expanded="false" />
             <element signature="e#228#269#0" expanded="false" />
             <element signature="e#287#332#0" expanded="false" />
             <element signature="e#432#681#0" expanded="false" />
             <element signature="e#585#640#0" expanded="false" />
             <element signature="n#!!doc;n#responsive#0" expanded="false" />
-            <element signature="n#!!block;n#responsive#0" expanded="false" />
             <element signature="e#956#1062#0" expanded="false" />
             <element signature="e#1091#1197#0" expanded="false" />
             <element signature="e#1202#1309#0" expanded="false" />
-            <element signature="n#!!block;n#client#0" expanded="false" />
-            <element signature="e#1343#1569#0" expanded="false" />
             <element signature="n#!!doc;n#merryGoRound#0" expanded="false" />
-            <element signature="n#!!block;n#merryGoRound#0" expanded="false" />
             <element signature="n#!!doc;n#event#0" expanded="false" />
-            <element signature="n#!!block;n#event#0" expanded="false" />
-            <element signature="e#2020#2053#0" expanded="false" />
             <element signature="n#!!doc;n#ret#0" expanded="false" />
-            <element signature="n#!!block;n#ret#0" expanded="false" />
             <element signature="n#!!doc;n#getXY#0" expanded="false" />
-            <element signature="n#!!block;n#getXY#0" expanded="false" />
             <element signature="e#2355#2664#0" expanded="false" />
             <element signature="n#!!doc;n#getBoxXY#0" expanded="false" />
-            <element signature="n#!!block;n#getBoxXY#0" expanded="false" />
             <element signature="n#!!doc;n#maoPao#0" expanded="false" />
-            <element signature="n#!!block;n#maoPao#0" expanded="false" />
-            <element signature="e#3263#3296#0" expanded="false" />
-            <element signature="e#3331#3369#0" expanded="false" />
-            <element signature="e#3402#3438#0" expanded="false" />
-            <element signature="n#!!block;n#maoPaoSecond#0" expanded="false" />
-            <element signature="e#3503#3536#0" expanded="false" />
-            <element signature="e#3571#3609#0" expanded="false" />
-            <element signature="e#3642#3678#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jWnb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#client#0" expanded="false" />
+            <element signature="e#549#789#0" expanded="false" />
+            <element signature="e#969#1013#0" expanded="false" />
+            <element signature="e#1163#1264#0" expanded="false" />
+            <element signature="e#1417#1626#0" expanded="false" />
+            <element signature="e#1434#1619#0" expanded="false" />
+            <element signature="e#1726#1867#0" expanded="false" />
+            <element signature="e#1761#1806#0" expanded="false" />
+            <element signature="e#1811#1861#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jWtools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jwroot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#obj#0" expanded="false" />
+            <element signature="n#!!block;n#Student#0;n#!!block;n#obj#0" expanded="false" />
+            <element signature="e#228#269#0" expanded="false" />
+            <element signature="e#287#332#0" expanded="false" />
+            <element signature="e#432#681#0" expanded="false" />
+            <element signature="e#585#640#0" expanded="false" />
+            <element signature="n#!!doc;n#responsive#0" expanded="false" />
+            <element signature="e#956#1062#0" expanded="false" />
+            <element signature="e#1091#1197#0" expanded="false" />
+            <element signature="e#1202#1309#0" expanded="false" />
+            <element signature="n#!!doc;n#merryGoRound#0" expanded="false" />
+            <element signature="n#!!doc;n#event#0" expanded="false" />
+            <element signature="n#!!doc;n#ret#0" expanded="false" />
+            <element signature="n#!!doc;n#getXY#0" expanded="false" />
+            <element signature="e#2355#2664#0" expanded="false" />
+            <element signature="n#!!doc;n#getBoxXY#0" expanded="false" />
+            <element signature="n#!!doc;n#maoPao#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -512,40 +486,22 @@
           <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc;n#obj#0" expanded="false" />
-            <element signature="n#!!block;n#obj#0" expanded="false" />
             <element signature="n#!!block;n#Student#0;n#!!block;n#obj#0" expanded="false" />
             <element signature="e#228#269#0" expanded="false" />
             <element signature="e#287#332#0" expanded="false" />
             <element signature="e#432#681#0" expanded="false" />
             <element signature="e#585#640#0" expanded="false" />
             <element signature="n#!!doc;n#responsive#0" expanded="false" />
-            <element signature="n#!!block;n#responsive#0" expanded="false" />
             <element signature="e#956#1062#0" expanded="false" />
             <element signature="e#1091#1197#0" expanded="false" />
             <element signature="e#1202#1309#0" expanded="false" />
-            <element signature="n#!!block;n#client#0" expanded="false" />
-            <element signature="e#1343#1569#0" expanded="false" />
             <element signature="n#!!doc;n#merryGoRound#0" expanded="false" />
-            <element signature="n#!!block;n#merryGoRound#0" expanded="false" />
             <element signature="n#!!doc;n#event#0" expanded="false" />
-            <element signature="n#!!block;n#event#0" expanded="false" />
-            <element signature="e#2020#2053#0" expanded="false" />
             <element signature="n#!!doc;n#ret#0" expanded="false" />
-            <element signature="n#!!block;n#ret#0" expanded="false" />
             <element signature="n#!!doc;n#getXY#0" expanded="false" />
-            <element signature="n#!!block;n#getXY#0" expanded="false" />
             <element signature="e#2355#2664#0" expanded="false" />
             <element signature="n#!!doc;n#getBoxXY#0" expanded="false" />
-            <element signature="n#!!block;n#getBoxXY#0" expanded="false" />
             <element signature="n#!!doc;n#maoPao#0" expanded="false" />
-            <element signature="n#!!block;n#maoPao#0" expanded="false" />
-            <element signature="e#3263#3296#0" expanded="false" />
-            <element signature="e#3331#3369#0" expanded="false" />
-            <element signature="e#3402#3438#0" expanded="false" />
-            <element signature="n#!!block;n#maoPaoSecond#0" expanded="false" />
-            <element signature="e#3503#3536#0" expanded="false" />
-            <element signature="e#3571#3609#0" expanded="false" />
-            <element signature="e#3642#3678#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -604,40 +560,22 @@
           <caret line="72" column="27" selection-start-line="72" selection-start-column="0" selection-end-line="75" selection-end-column="1" />
           <folding>
             <element signature="n#!!doc;n#obj#0" expanded="false" />
-            <element signature="n#!!block;n#obj#0" expanded="false" />
             <element signature="n#!!block;n#Student#0;n#!!block;n#obj#0" expanded="false" />
             <element signature="e#228#269#0" expanded="false" />
             <element signature="e#287#332#0" expanded="false" />
             <element signature="e#432#681#0" expanded="false" />
             <element signature="e#585#640#0" expanded="false" />
             <element signature="n#!!doc;n#responsive#0" expanded="false" />
-            <element signature="n#!!block;n#responsive#0" expanded="false" />
             <element signature="e#956#1062#0" expanded="false" />
             <element signature="e#1091#1197#0" expanded="false" />
             <element signature="e#1202#1309#0" expanded="false" />
-            <element signature="n#!!block;n#client#0" expanded="false" />
-            <element signature="e#1343#1569#0" expanded="false" />
             <element signature="n#!!doc;n#merryGoRound#0" expanded="false" />
-            <element signature="n#!!block;n#merryGoRound#0" expanded="false" />
             <element signature="n#!!doc;n#event#0" expanded="false" />
-            <element signature="n#!!block;n#event#0" expanded="false" />
-            <element signature="e#2020#2053#0" expanded="false" />
             <element signature="n#!!doc;n#ret#0" expanded="false" />
-            <element signature="n#!!block;n#ret#0" expanded="false" />
             <element signature="n#!!doc;n#getXY#0" expanded="false" />
-            <element signature="n#!!block;n#getXY#0" expanded="false" />
             <element signature="e#2355#2664#0" expanded="false" />
             <element signature="n#!!doc;n#getBoxXY#0" expanded="false" />
-            <element signature="n#!!block;n#getBoxXY#0" expanded="false" />
             <element signature="n#!!doc;n#maoPao#0" expanded="false" />
-            <element signature="n#!!block;n#maoPao#0" expanded="false" />
-            <element signature="e#3263#3296#0" expanded="false" />
-            <element signature="e#3331#3369#0" expanded="false" />
-            <element signature="e#3402#3438#0" expanded="false" />
-            <element signature="n#!!block;n#maoPaoSecond#0" expanded="false" />
-            <element signature="e#3503#3536#0" expanded="false" />
-            <element signature="e#3571#3609#0" expanded="false" />
-            <element signature="e#3642#3678#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -735,58 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/jwroot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc;n#obj#0" expanded="false" />
-            <element signature="n#!!block;n#obj#0" expanded="false" />
-            <element signature="n#!!block;n#Student#0;n#!!block;n#obj#0" expanded="false" />
-            <element signature="e#228#269#0" expanded="false" />
-            <element signature="e#287#332#0" expanded="false" />
-            <element signature="e#432#681#0" expanded="false" />
-            <element signature="e#585#640#0" expanded="false" />
-            <element signature="n#!!doc;n#responsive#0" expanded="false" />
-            <element signature="n#!!block;n#responsive#0" expanded="false" />
-            <element signature="e#956#1062#0" expanded="false" />
-            <element signature="e#1091#1197#0" expanded="false" />
-            <element signature="e#1202#1309#0" expanded="false" />
-            <element signature="n#!!block;n#client#0" expanded="false" />
-            <element signature="e#1343#1569#0" expanded="false" />
-            <element signature="n#!!doc;n#merryGoRound#0" expanded="false" />
-            <element signature="n#!!block;n#merryGoRound#0" expanded="false" />
-            <element signature="n#!!doc;n#event#0" expanded="false" />
-            <element signature="n#!!block;n#event#0" expanded="false" />
-            <element signature="e#2020#2053#0" expanded="false" />
-            <element signature="n#!!doc;n#ret#0" expanded="false" />
-            <element signature="n#!!block;n#ret#0" expanded="false" />
-            <element signature="n#!!doc;n#getXY#0" expanded="false" />
-            <element signature="n#!!block;n#getXY#0" expanded="false" />
-            <element signature="e#2355#2664#0" expanded="false" />
-            <element signature="n#!!doc;n#getBoxXY#0" expanded="false" />
-            <element signature="n#!!block;n#getBoxXY#0" expanded="false" />
-            <element signature="n#!!doc;n#maoPao#0" expanded="false" />
-            <element signature="n#!!block;n#maoPao#0" expanded="false" />
-            <element signature="e#3263#3296#0" expanded="false" />
-            <element signature="e#3331#3369#0" expanded="false" />
-            <element signature="e#3402#3438#0" expanded="false" />
-            <element signature="n#!!block;n#maoPaoSecond#0" expanded="false" />
-            <element signature="e#3503#3536#0" expanded="false" />
-            <element signature="e#3571#3609#0" expanded="false" />
-            <element signature="e#3642#3678#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jWnb.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -807,8 +693,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9896194">
+        <state vertical-scroll-proportion="0.0">
           <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jwroot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="174" column="0" selection-start-line="174" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#obj#0" expanded="false" />
+            <element signature="n#!!block;n#Student#0;n#!!block;n#obj#0" expanded="false" />
+            <element signature="e#228#269#0" expanded="false" />
+            <element signature="e#287#332#0" expanded="false" />
+            <element signature="e#432#681#0" expanded="false" />
+            <element signature="e#585#640#0" expanded="false" />
+            <element signature="n#!!doc;n#responsive#0" expanded="false" />
+            <element signature="e#956#1062#0" expanded="false" />
+            <element signature="e#1091#1197#0" expanded="false" />
+            <element signature="e#1202#1309#0" expanded="false" />
+            <element signature="n#!!doc;n#merryGoRound#0" expanded="false" />
+            <element signature="n#!!doc;n#event#0" expanded="false" />
+            <element signature="n#!!doc;n#ret#0" expanded="false" />
+            <element signature="n#!!doc;n#getXY#0" expanded="false" />
+            <element signature="e#2355#2664#0" expanded="false" />
+            <element signature="n#!!doc;n#getBoxXY#0" expanded="false" />
+            <element signature="n#!!doc;n#maoPao#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9808917">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>

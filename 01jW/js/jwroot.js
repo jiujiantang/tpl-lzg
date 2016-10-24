@@ -157,3 +157,25 @@ function maoPaoSecond(btn){
         alert("window被点击了");
     };
 }
+/**
+ * 密码强度
+ */
+function regEx(){
+    console.log("/\d/.test('1')"+/\d/.test("1"));//数字
+    console.log("/\w/.test('a')"+/\w/.test("a"));//单词字符
+    console.log("/\w/.test('1')"+/\w/.test("1"));//单词字符
+    console.log("/\w/.test('_')"+/\w/.test("_"));//单词字符
+    console.log("/\s/.test(' ')"+/\s/.test(" "));//不可见字符
+}
+function regTel(arr){
+    //010-12345678
+    //var regTel = /^0\d\d-\d\d\d\d\d\d\d\d$/;
+    //var regTel = /^0\d{2}-\d{8}$/;
+    //0313-1234567
+    var regTel = /^0\d{2,3}-[1-9]\d{6,7}$/;
+    if(regTel.test(arr)){
+        return true;
+    }else{
+        return false;
+    }
+}
