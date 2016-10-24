@@ -1,0 +1,817 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="21b91866-ac34-4855-a2a8-15c577cc6b0d" name="默认的" comment="" />
+    <ignored path="01jW.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="01jW" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="jwroot.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/jwroot.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc;n#obj#0" expanded="false" />
+                <element signature="n#!!block;n#obj#0" expanded="false" />
+                <element signature="n#!!block;n#Student#0;n#!!block;n#obj#0" expanded="false" />
+                <element signature="e#228#269#0" expanded="false" />
+                <element signature="e#287#332#0" expanded="false" />
+                <element signature="e#432#681#0" expanded="false" />
+                <element signature="e#585#640#0" expanded="false" />
+                <element signature="n#!!doc;n#responsive#0" expanded="false" />
+                <element signature="n#!!block;n#responsive#0" expanded="false" />
+                <element signature="e#956#1062#0" expanded="false" />
+                <element signature="e#1091#1197#0" expanded="false" />
+                <element signature="e#1202#1309#0" expanded="false" />
+                <element signature="n#!!block;n#client#0" expanded="false" />
+                <element signature="e#1343#1569#0" expanded="false" />
+                <element signature="n#!!doc;n#merryGoRound#0" expanded="false" />
+                <element signature="n#!!block;n#merryGoRound#0" expanded="false" />
+                <element signature="n#!!doc;n#event#0" expanded="false" />
+                <element signature="n#!!block;n#event#0" expanded="false" />
+                <element signature="e#2020#2053#0" expanded="false" />
+                <element signature="n#!!doc;n#ret#0" expanded="false" />
+                <element signature="n#!!block;n#ret#0" expanded="false" />
+                <element signature="n#!!doc;n#getXY#0" expanded="false" />
+                <element signature="n#!!block;n#getXY#0" expanded="false" />
+                <element signature="e#2355#2664#0" expanded="false" />
+                <element signature="n#!!doc;n#getBoxXY#0" expanded="false" />
+                <element signature="n#!!block;n#getBoxXY#0" expanded="false" />
+                <element signature="n#!!doc;n#maoPao#0" expanded="false" />
+                <element signature="n#!!block;n#maoPao#0" expanded="false" />
+                <element signature="e#3263#3296#0" expanded="false" />
+                <element signature="e#3331#3369#0" expanded="false" />
+                <element signature="e#3402#3438#0" expanded="false" />
+                <element signature="n#!!block;n#maoPaoSecond#0" expanded="false" />
+                <element signature="e#3503#3536#0" expanded="false" />
+                <element signature="e#3571#3609#0" expanded="false" />
+                <element signature="e#3642#3678#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jWnb.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/jWnb.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!block;n#client#0" expanded="false" />
+                <element signature="e#549#789#0" expanded="false" />
+                <element signature="e#969#1013#0" expanded="false" />
+                <element signature="e#1163#1264#0" expanded="false" />
+                <element signature="e#1417#1626#0" expanded="false" />
+                <element signature="e#1434#1619#0" expanded="false" />
+                <element signature="e#1726#1867#0" expanded="false" />
+                <element signature="e#1761#1806#0" expanded="false" />
+                <element signature="e#1811#1861#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="myAnimation.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.9896194">
+              <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jWtools.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/jWtools.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Html5" />
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/demo/旋转木马/demo.html" />
+        <option value="$PROJECT_DIR$/demo/旋转木马/js/myAnimation.js" />
+        <option value="$PROJECT_DIR$/js/myAnimation.js" />
+        <option value="$PROJECT_DIR$/demo/旋转木马/js/my.js" />
+        <option value="$PROJECT_DIR$/demo/鼠标拖拽/鼠标拖拽.html" />
+        <option value="$PROJECT_DIR$/demo/爱心/heat.css" />
+        <option value="$PROJECT_DIR$/demo/放大镜/放大镜.html" />
+        <option value="$PROJECT_DIR$/demo/对话框拖拽/jWnb.js" />
+        <option value="$PROJECT_DIR$/demo/对话框拖拽/1实现移动.html" />
+        <option value="$PROJECT_DIR$/js/jwroot.js" />
+        <option value="$PROJECT_DIR$/test.html" />
+        <option value="$PROJECT_DIR$/js/jWnb.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="58" />
+    <option name="y" value="54" />
+    <option name="width" value="926" />
+    <option name="height" value="747" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <OptionsSetting value="true" id="添加" />
+    <OptionsSetting value="true" id="移除" />
+    <OptionsSetting value="true" id="签出" />
+    <OptionsSetting value="true" id="更新" />
+    <OptionsSetting value="true" id="状态" />
+    <OptionsSetting value="true" id="编辑" />
+    <ConfirmationsSetting value="0" id="添加" />
+    <ConfirmationsSetting value="0" id="移除" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01jW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01jW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01jW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01jW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01jW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01jW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01jW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01jW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01jW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="放大镜" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01jW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01jW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="放大镜" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01jW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="01jW" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="对话框拖拽" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="options.lastSelected" value="configurable.group.appearance" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="DefaultHtmlFileTemplate" value="Html5" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\01jW\demo\对话框拖拽" />
+      <recent name="F:\01jW\demo\放大镜" />
+      <recent name="F:\01jW\demo\鼠标拖拽" />
+      <recent name="F:\01jW\js" />
+      <recent name="F:\01jW\demo\旋转木马\js" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JsTestDriver-test-runner" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="21b91866-ac34-4855-a2a8-15c577cc6b0d" name="默认的" comment="" />
+      <created>1477046148584</created>
+      <option name="number" value="Default" />
+      <updated>1477046148584</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="58" y="54" width="926" height="747" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0744921" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24739195" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="9" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/jwroot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#obj#0" expanded="false" />
+            <element signature="n#!!block;n#obj#0" expanded="false" />
+            <element signature="n#!!block;n#Student#0;n#!!block;n#obj#0" expanded="false" />
+            <element signature="e#228#269#0" expanded="false" />
+            <element signature="e#287#332#0" expanded="false" />
+            <element signature="e#432#681#0" expanded="false" />
+            <element signature="e#585#640#0" expanded="false" />
+            <element signature="n#!!doc;n#responsive#0" expanded="false" />
+            <element signature="n#!!block;n#responsive#0" expanded="false" />
+            <element signature="e#956#1062#0" expanded="false" />
+            <element signature="e#1091#1197#0" expanded="false" />
+            <element signature="e#1202#1309#0" expanded="false" />
+            <element signature="n#!!block;n#client#0" expanded="false" />
+            <element signature="e#1343#1569#0" expanded="false" />
+            <element signature="n#!!doc;n#merryGoRound#0" expanded="false" />
+            <element signature="n#!!block;n#merryGoRound#0" expanded="false" />
+            <element signature="n#!!doc;n#event#0" expanded="false" />
+            <element signature="n#!!block;n#event#0" expanded="false" />
+            <element signature="e#2020#2053#0" expanded="false" />
+            <element signature="n#!!doc;n#ret#0" expanded="false" />
+            <element signature="n#!!block;n#ret#0" expanded="false" />
+            <element signature="n#!!doc;n#getXY#0" expanded="false" />
+            <element signature="n#!!block;n#getXY#0" expanded="false" />
+            <element signature="e#2355#2664#0" expanded="false" />
+            <element signature="n#!!doc;n#getBoxXY#0" expanded="false" />
+            <element signature="n#!!block;n#getBoxXY#0" expanded="false" />
+            <element signature="n#!!doc;n#maoPao#0" expanded="false" />
+            <element signature="n#!!block;n#maoPao#0" expanded="false" />
+            <element signature="e#3263#3296#0" expanded="false" />
+            <element signature="e#3331#3369#0" expanded="false" />
+            <element signature="e#3402#3438#0" expanded="false" />
+            <element signature="n#!!block;n#maoPaoSecond#0" expanded="false" />
+            <element signature="e#3503#3536#0" expanded="false" />
+            <element signature="e#3571#3609#0" expanded="false" />
+            <element signature="e#3642#3678#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jWnb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#client#0" expanded="false" />
+            <element signature="e#549#789#0" expanded="false" />
+            <element signature="e#969#1013#0" expanded="false" />
+            <element signature="e#1163#1264#0" expanded="false" />
+            <element signature="e#1417#1626#0" expanded="false" />
+            <element signature="e#1434#1619#0" expanded="false" />
+            <element signature="e#1726#1867#0" expanded="false" />
+            <element signature="e#1761#1806#0" expanded="false" />
+            <element signature="e#1811#1861#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jWtools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jwroot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#obj#0" expanded="false" />
+            <element signature="n#!!block;n#obj#0" expanded="false" />
+            <element signature="n#!!block;n#Student#0;n#!!block;n#obj#0" expanded="false" />
+            <element signature="e#228#269#0" expanded="false" />
+            <element signature="e#287#332#0" expanded="false" />
+            <element signature="e#432#681#0" expanded="false" />
+            <element signature="e#585#640#0" expanded="false" />
+            <element signature="n#!!doc;n#responsive#0" expanded="false" />
+            <element signature="n#!!block;n#responsive#0" expanded="false" />
+            <element signature="e#956#1062#0" expanded="false" />
+            <element signature="e#1091#1197#0" expanded="false" />
+            <element signature="e#1202#1309#0" expanded="false" />
+            <element signature="n#!!block;n#client#0" expanded="false" />
+            <element signature="e#1343#1569#0" expanded="false" />
+            <element signature="n#!!doc;n#merryGoRound#0" expanded="false" />
+            <element signature="n#!!block;n#merryGoRound#0" expanded="false" />
+            <element signature="n#!!doc;n#event#0" expanded="false" />
+            <element signature="n#!!block;n#event#0" expanded="false" />
+            <element signature="e#2020#2053#0" expanded="false" />
+            <element signature="n#!!doc;n#ret#0" expanded="false" />
+            <element signature="n#!!block;n#ret#0" expanded="false" />
+            <element signature="n#!!doc;n#getXY#0" expanded="false" />
+            <element signature="n#!!block;n#getXY#0" expanded="false" />
+            <element signature="e#2355#2664#0" expanded="false" />
+            <element signature="n#!!doc;n#getBoxXY#0" expanded="false" />
+            <element signature="n#!!block;n#getBoxXY#0" expanded="false" />
+            <element signature="n#!!doc;n#maoPao#0" expanded="false" />
+            <element signature="n#!!block;n#maoPao#0" expanded="false" />
+            <element signature="e#3263#3296#0" expanded="false" />
+            <element signature="e#3331#3369#0" expanded="false" />
+            <element signature="e#3402#3438#0" expanded="false" />
+            <element signature="n#!!block;n#maoPaoSecond#0" expanded="false" />
+            <element signature="e#3503#3536#0" expanded="false" />
+            <element signature="e#3571#3609#0" expanded="false" />
+            <element signature="e#3642#3678#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jWnb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#client#0" expanded="false" />
+            <element signature="e#549#789#0" expanded="false" />
+            <element signature="e#969#1013#0" expanded="false" />
+            <element signature="e#1163#1264#0" expanded="false" />
+            <element signature="e#1417#1626#0" expanded="false" />
+            <element signature="e#1434#1619#0" expanded="false" />
+            <element signature="e#1726#1867#0" expanded="false" />
+            <element signature="e#1761#1806#0" expanded="false" />
+            <element signature="e#1811#1861#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jWtools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/旋转木马/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="18" column="59" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/旋转木马/js/my.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jwroot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="27" selection-start-line="72" selection-start-column="0" selection-end-line="75" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc;n#obj#0" expanded="false" />
+            <element signature="n#!!block;n#obj#0" expanded="false" />
+            <element signature="n#!!block;n#Student#0;n#!!block;n#obj#0" expanded="false" />
+            <element signature="e#228#269#0" expanded="false" />
+            <element signature="e#287#332#0" expanded="false" />
+            <element signature="e#432#681#0" expanded="false" />
+            <element signature="e#585#640#0" expanded="false" />
+            <element signature="n#!!doc;n#responsive#0" expanded="false" />
+            <element signature="n#!!block;n#responsive#0" expanded="false" />
+            <element signature="e#956#1062#0" expanded="false" />
+            <element signature="e#1091#1197#0" expanded="false" />
+            <element signature="e#1202#1309#0" expanded="false" />
+            <element signature="n#!!block;n#client#0" expanded="false" />
+            <element signature="e#1343#1569#0" expanded="false" />
+            <element signature="n#!!doc;n#merryGoRound#0" expanded="false" />
+            <element signature="n#!!block;n#merryGoRound#0" expanded="false" />
+            <element signature="n#!!doc;n#event#0" expanded="false" />
+            <element signature="n#!!block;n#event#0" expanded="false" />
+            <element signature="e#2020#2053#0" expanded="false" />
+            <element signature="n#!!doc;n#ret#0" expanded="false" />
+            <element signature="n#!!block;n#ret#0" expanded="false" />
+            <element signature="n#!!doc;n#getXY#0" expanded="false" />
+            <element signature="n#!!block;n#getXY#0" expanded="false" />
+            <element signature="e#2355#2664#0" expanded="false" />
+            <element signature="n#!!doc;n#getBoxXY#0" expanded="false" />
+            <element signature="n#!!block;n#getBoxXY#0" expanded="false" />
+            <element signature="n#!!doc;n#maoPao#0" expanded="false" />
+            <element signature="n#!!block;n#maoPao#0" expanded="false" />
+            <element signature="e#3263#3296#0" expanded="false" />
+            <element signature="e#3331#3369#0" expanded="false" />
+            <element signature="e#3402#3438#0" expanded="false" />
+            <element signature="n#!!block;n#maoPaoSecond#0" expanded="false" />
+            <element signature="e#3503#3536#0" expanded="false" />
+            <element signature="e#3571#3609#0" expanded="false" />
+            <element signature="e#3642#3678#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/旋转木马/js/myAnimation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="72" column="14" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/旋转木马/js/animate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/旋转木马/js/animate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="52" selection-start-line="6" selection-start-column="52" selection-end-line="6" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/旋转木马/js/myAnimation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39100346">
+          <caret line="72" column="14" selection-start-line="72" selection-start-column="14" selection-end-line="72" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/旋转木马/js/my.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="2" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/旋转木马/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.034483">
+          <caret line="18" column="59" selection-start-line="18" selection-start-column="52" selection-end-line="18" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/爱心/heat.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/鼠标拖拽/鼠标拖拽.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.793103">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/放大镜/放大镜.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.310345">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/对话框拖拽/jWnb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!doc;n#client#0" expanded="false" />
+            <element signature="n#!!block;n#client#0" expanded="false" />
+            <element signature="n#!!doc;n#getEvent#0" expanded="false" />
+            <element signature="n#!!block;n#getEvent#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo/对话框拖拽/1实现移动.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.103448">
+          <caret line="85" column="0" selection-start-line="85" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jWtools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jwroot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="159" column="0" selection-start-line="159" selection-start-column="0" selection-end-line="159" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#obj#0" expanded="false" />
+            <element signature="n#!!block;n#obj#0" expanded="false" />
+            <element signature="n#!!block;n#Student#0;n#!!block;n#obj#0" expanded="false" />
+            <element signature="e#228#269#0" expanded="false" />
+            <element signature="e#287#332#0" expanded="false" />
+            <element signature="e#432#681#0" expanded="false" />
+            <element signature="e#585#640#0" expanded="false" />
+            <element signature="n#!!doc;n#responsive#0" expanded="false" />
+            <element signature="n#!!block;n#responsive#0" expanded="false" />
+            <element signature="e#956#1062#0" expanded="false" />
+            <element signature="e#1091#1197#0" expanded="false" />
+            <element signature="e#1202#1309#0" expanded="false" />
+            <element signature="n#!!block;n#client#0" expanded="false" />
+            <element signature="e#1343#1569#0" expanded="false" />
+            <element signature="n#!!doc;n#merryGoRound#0" expanded="false" />
+            <element signature="n#!!block;n#merryGoRound#0" expanded="false" />
+            <element signature="n#!!doc;n#event#0" expanded="false" />
+            <element signature="n#!!block;n#event#0" expanded="false" />
+            <element signature="e#2020#2053#0" expanded="false" />
+            <element signature="n#!!doc;n#ret#0" expanded="false" />
+            <element signature="n#!!block;n#ret#0" expanded="false" />
+            <element signature="n#!!doc;n#getXY#0" expanded="false" />
+            <element signature="n#!!block;n#getXY#0" expanded="false" />
+            <element signature="e#2355#2664#0" expanded="false" />
+            <element signature="n#!!doc;n#getBoxXY#0" expanded="false" />
+            <element signature="n#!!block;n#getBoxXY#0" expanded="false" />
+            <element signature="n#!!doc;n#maoPao#0" expanded="false" />
+            <element signature="n#!!block;n#maoPao#0" expanded="false" />
+            <element signature="e#3263#3296#0" expanded="false" />
+            <element signature="e#3331#3369#0" expanded="false" />
+            <element signature="e#3402#3438#0" expanded="false" />
+            <element signature="n#!!block;n#maoPaoSecond#0" expanded="false" />
+            <element signature="e#3503#3536#0" expanded="false" />
+            <element signature="e#3571#3609#0" expanded="false" />
+            <element signature="e#3642#3678#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/jWnb.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!block;n#client#0" expanded="false" />
+            <element signature="e#549#789#0" expanded="false" />
+            <element signature="e#969#1013#0" expanded="false" />
+            <element signature="e#1163#1264#0" expanded="false" />
+            <element signature="e#1417#1626#0" expanded="false" />
+            <element signature="e#1434#1619#0" expanded="false" />
+            <element signature="e#1726#1867#0" expanded="false" />
+            <element signature="e#1761#1806#0" expanded="false" />
+            <element signature="e#1811#1861#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.9896194">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

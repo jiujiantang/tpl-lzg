@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            height: 30px;
+            background: #036663;
+            border-bottom: 1px solid #369;
+            line-height: 30px;
+            padding-left: 30px;
+        }
+
+        .nav a {
+            color: #fff;
+            text-align: center;
+            font-size: 14px;
+            text-decoration: none;
+
+        }
+
+        .d-box {
+            width: 400px;
+            height: 300px;
+            border: 5px solid #eee;
+            box-shadow: 2px 2px 2px 2px #666;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+        }
+
+        .hd {
+            width: 100%;
+            height: 25px;
+            background-color: #7c9299;
+            border-bottom: 1px solid #369;
+            line-height: 25px;
+            color: white;
+            cursor: move;
+        }
+
+        #box_close {
+            float: right;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div class="nav">
+    <a href="javascript:;" id="register">注册信息</a>
+</div>
+<div class="d-box" id="d_box">
+    <div class="hd" id="drop">注册信息 (可以拖拽)
+        <span id="box_close">【关闭】</span>
+    </div>
+    <div class="bd"></div>
+</div>
+<script src="jWnb.js"></script>
+<script>
+    //找人
+    var d_box = document.getElementById("d_box");//盒子整体
+    var drop = document.getElementById("drop");//拖动条
+    //鼠标在盒子的头部按下 盒子整体跟着鼠标移动
+    //drop注册事件
+    drop.onmousedown = function(event) {
+        //获取鼠标页面上的位置
+        var pageX = getPageXY(event).pageX;
+        var pageY = getPageXY(event).pageY;
+        //获取鼠标在d_box里面的位置
+        var boxX = pageX-d_box.offsetLeft;
+        var boxY = pageY-d_box.offsetTop;
+        //document注册移动事件
+        document.onmousemove = function(event){
+            //获取鼠标页面上的位置
+            var pageX = getPageXY(event).pageX;
+            var pageY = getPageXY(event).pageY;
+            //盒子拿到位置
+            d_box.style.left = pageX-boxX +"px";
+            d_box.style.top = pageY-boxY +"px";
+            window.getSelection ? window.getSelection().removeAllRanges() : document.selection.empty();//防止文字被选中
+        };
+    };
+    document.onmouseup = function () {
+        document.onmousemove = null;
+    };
+
+</script>
+</body>
+</html>

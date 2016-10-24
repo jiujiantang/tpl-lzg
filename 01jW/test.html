@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+       .test {
+           position: relative;
+           width: 100px;
+           height: 100px;
+           background: red;
+           left: 10px;
+           top: 10px;
+       }
+    </style>
+</head>
+<body>
+<input type="button" value="btn" id="btn"/>
+<script src="js/jwroot.js"></script>
+<script src="js/jWnb.js"></script>
+<script>
+   var btn = document.getElementById("btn");
+   btn.onclick = function(event){
+       console.log(eventUtil.getEvent_target(event).tagName);
+   }
+
+</script>
+
+</body>
+</html>

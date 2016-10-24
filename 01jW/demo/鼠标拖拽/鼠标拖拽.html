@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0
+        }
+
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+<img src="img.jpg" alt="" width="50" height="50" id="pic"/>
+<script>
+    var timer = null;
+    //找人
+    var pic = document.getElementById("pic");
+    //在页面上 点击的时候 获取鼠标在页面上的位置 让图片 渐渐到 到这个位置
+    document.onmousemove = function (event) {
+        clearInterval(timer);
+        var o = getPageXY(event);
+        var pageX = o.pageX;
+        var pageY = o.pageY;
+       //让图片 渐渐到 到这个位置
+        timer = setInterval(function () {
+            //step = (target - leader) / 10
+            //leader = leader + step
+            var targetX = pageX;//水平方向的目标
+            var targetY = pageY;//水平方向的目标
+            var leaderX = pic.offsetLeft;//水平方向的当前位置
+            var leaderY = pic.offsetTop;//水平方向的当前位置
+            var stepX = (targetX - leaderX) / 10;
+            var stepY = (targetY - leaderY) / 10;
+            stepX = stepX > 0 ? Math.ceil(stepX) : Math.floor(stepX);
+            stepY = stepY > 0 ? Math.ceil(stepY) : Math.floor(stepY);
+            leaderX = leaderX + stepX;
+            leaderY = leaderY + stepY;
+            pic.style.left = leaderX + "px";//一定要记得加单位
+            pic.style.top = leaderY + "px";//一定要记得加单位
+            if (leaderX === targetX&&leaderX === targetX) {
+                clearInterval(timer);
+            }
+        }, 1);
+    };
+
+    /**
+     * 获取pageX和pageY
+     */
+    function getPageXY(event){
+        var  event = event || window.event;
+        return {
+            pageX : event.pageX || event.clientX + document.documentElement.scrollLeft,
+            pageY : event.pageY || event.clientY + document.documentElement.scrollTop
+        };
+    }
+</script>
+</body>
+</html>
