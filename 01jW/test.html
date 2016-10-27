@@ -3,6 +3,9 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
+    <script src="js/jquery-1.12.2.js"></script>
+    <script src="js/jwroot.js"></script>
+    <script src="js/jWnb.js"></script>
     <style>
        .test {
            position: relative;
@@ -12,14 +15,42 @@
            left: 10px;
            top: 10px;
        }
+        li {
+            background: skyblue;
+            width: 200px;
+            height: 50px;
+        }
     </style>
 </head>
 <body>
-<input type="button" value="btn" id="btn"/>
-<script src="js/jwroot.js"></script>
-<script src="js/jWnb.js"></script>
+<input  id="test" type="button" value="btn" id="btn"/>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<div id="test2"></div>
+
 <script>
-    console.log(regTel("011-01011912"));
+    $(function(){
+//        console.log($("ul>li"));
+        var lis = $("ul>li");
+//        console.log(lis);
+        for(var i=0;i<lis.length;i++){
+            lis[i].css("background","red")
+        }
+    });
+    //    $(function(){
+//        for(var i=0; i<$("ul>li").length;i++){
+//            $("ul>li")[i].click(function(){
+//                for(var j=0; j<$("ul>li").length;j++){
+//                    $("ul>li")[j].css("background","skyblue");
+//                }
+//                $(this).css("background","red");
+//            });
+//        }
+//    });
+
 
 </script>
 

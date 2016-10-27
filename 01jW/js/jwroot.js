@@ -179,3 +179,29 @@ function regTel(arr){
         return false;
     }
 }
+/**
+ * $内要传入字符串
+ * @param arr
+ * @param type
+ * @returns {*}
+ */
+function jQclick(arr,type){
+    var argument;
+    switch(type){
+        case "id":
+            argument = "#"+arr;
+            break;
+        case "class":
+            argument = "."+arr;
+        default:
+            break;
+    }
+    return argument;
+}
+/**
+ * 自定义的$
+ * @param arr
+ */
+//function $(arr) {
+//    alert(arr);
+//}
