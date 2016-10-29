@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body{
+            background: skyblue;
+        }
+        .animate {
+            width: 500px;
+            height: 500px;
+            font-style: italic;
+        }
+        .father {
+            background: green;
+            /*position: relative;*/
+        }
+        .son {
+            position: relative;
+            left: 100px;
+        }
+        .son ul {
+            width: 100px;
+            height: 100px;
+            background: pink;
+        }
+    </style>
+    <script src="js/jquery-1.12.2.js"></script>
+</head>
+<body>
+<div class="father" id="father">
+    <input type="text"/>
+    <div class="son" id="son">
+        <input type="text"/>
+        <ul>
+        <li><a href="#">01</a></li>
+        <li><a href="#">02</a></li>
+        <li><a href="#">03</a></li>
+        <li><a href="#">04</a></li>
+        <li><a href="#">05</a></li>
+        <li><a href="#">06</a></li>
+        </ul>
+    </div>
+</div>
+<div id="passer" class="passer"></div>
+<input type="checkbox" id="cbx"/>
+<button id="btn">按钮</button>
+<button id="btn2">按钮2</button>
+<button id="_btn2">按钮2'</button>
+<button id="btn3">按钮3</button>
+<button id="_btn3">按钮3'</button>
+<button id="btn4">按钮4</button>
+<button id="btn5">按钮5</button>
+<button id="btn6">按钮6</button>
+<button id="btn7">按钮7</button>
+<button id="btn8">按钮8</button>
+<button id="btn9">按钮9</button>
+<button id="btn10">按钮10</button>
+<button id="btn11">设置读取属性</button>
+<button id="btn12">选中反选</button>
+<button id="btn13">操作文本内容</button>
+<button id="btn14">获取高度和宽度</button>
+<button id="btn15">设置元素的位置</button>
+<button id="btn16">绑定动态创建的元素</button>
+
+
+<script>
+    //1.jQuery的入口函数=======================
+    $(document).ready(function(){
+
+    });
+    $(function(){
+
+    });
+    //2.css():设置样式属性=============================
+    //第一个参数：要修改的样式属性名称
+    //第二个参数：要修改到的值
+    //传入的数有三种格式：对象（不用打引号）、数字（不用打引号）、字符串（打引号）
+    $("#father").css("width","100px");
+    $("#father").css("height","150px");
+    //css()内连写，里面传入一个json对象
+    $("#father").css({
+        "background":"pink",
+        "font-size":"14px",
+        "opacity":0.5
+    });
+    //获取样式属性
+    console.log($("#father").css("font-size"));
+    //3.设置类样式======================================
+    //addClass()添加类样式
+    //removeClass()删除类样式
+    //hasClass(）查询类样式 有返回true 没有返回false
+    //toggleClass() 修改类样式 有就删除 没有就添加
+    $("#father").addClass("animate");
+    //$("#father").removeClass("animate");
+    console.log($("#father").hasClass("animate"));
+    $("#father").toggleClass("animate");
+    //4.动画的隐藏效果hide()===========================================
+    $("#btn").click(function(){
+        $("#father .son ul").children("li").eq(0).hide("fast");
+        $("#father .son ul").children("li").eq(1).hide("normal");
+        $("#father .son ul").children("li").eq(2).hide("slow");
+        $("#father .son ul").children("li").eq(3).hide(1000);
+    });
+    //5.动画的展示效果show()=========================================
+    $("#btn").dblclick(function(){
+        $("#father .son ul").children("li").eq(0).show("fast");
+        $("#father .son ul").children("li").eq(1).show("normal");
+        $("#father .son ul").children("li").eq(2).show("slow");
+        $("#father .son ul").children("li").eq(3).show(1000);
+    });
+    //6.滑动动画==========================================
+    //slideUp() slideDown（）对元素和伪数组都起作用
+    $("#btn2").click(function(){
+        $("#father .son ul").children("li").eq(1).slideUp(1000);
+    });
+    $("#btn2").dblclick(function(){
+        $("#father .son ul").children("li").slideDown(3000);
+    });
+    $("#_btn2").click(function(){
+        $("div").slideToggle(3000);
+    });
+    //7.淡入淡出
+    $("#btn3").click(function(){
+        $("#father .son ul").children("li").eq(2).fadeOut();
+    });
+    $("#btn3").dblclick(function(){
+        $("#father .son ul").children("li").eq(2).fadeIn();
+    });
+    $("#_btn3").click(function(){
+        $("div").fadeToggle(3000);
+    });
+    //淡到
+    $("#btn4").click(function(){
+        $("div").fadeTo(1000,0.5);
+    });
+    //自定义动画
+    $("#btn5").click(function(){
+        $("div").animate({"width":"200px","height":"500px"},
+                1000,
+                "swing",
+                null);
+    });
+    //动态创建元素
+    $("#btn6").click(function(){
+        var $p = $("<p></p>");
+        $p.css({
+            "display":"block",
+            "width":"100px",
+            "height":"20px",
+            "background":"green"
+        });
+        $("#father").append($p);
+    });
+    //动态迁移元素,迁移已经存在的jQuery对象
+    $("#btn7").click(function(){
+        $("#passer").append($("#father .son ul"));
+    });
+    //html()方法的应用
+    //设置文本的同时会清除原来的内容
+    $("#btn8").click(function(){
+        $("#father .son ul>li:eq(0)").html("HelloWorld");
+        $("#father .son ul>li:eq(1)").html("<h3>HelloWorld</h3>");
+        $("#father .son ul>li:eq(2)").html("");
+        $("#father .son ul>li:eq(4)").empty();
+        $("#father .son ul>li:eq(5)").remove();
+    });
+    //复制元素
+    //clone()
+    $("#btn9").click(function(){
+        console.log(123);
+        var $clone = $("#father .son ul").clone();
+        $("#passer").append($clone);
+    });
+    //设置和获取表单元素的值
+    $("#btn10").click(function(){
+        $("#father .son input").val("从开始到现在");
+        console.log($("#father .son input").val());
+    });
+    //jQuery事件对象
+    //screenX/screenY:相对“xx”寸屏幕的距离
+    //clientX/clientY:相对浏览器窗口左上边的距离
+    //pageX/pageY:相对文档左上边的距离
+    //offsetX/offsetY:相对有定位的父元素左上边的距离
+    $("#father").on("click",function(event){
+        console.log(event);
+    });
+    //属性操作
+    //设置属性
+    $("#btn11").on("click",function(){
+        //设置上属性
+        $("#btn11").attr("n","这个自定义属性很牛逼！");
+        //操作属性
+        var n =$("#btn11").attr("n");
+        console.log(n);
+    });
+    //获取特殊属性
+    //选中反选
+    $("#btn12").on("click",function(){
+        //获取属性
+        var checked = $("#cbx").prop("checked");
+        //判断是否被选中
+        if(checked){
+            $("#cbx").prop("checked",false);
+        }else{
+            $("#cbx").prop("checked",true);
+        }
+    });
+    //操作文本内容
+    $("#btn13").on("click",function(){
+        //设置文本内容,不能设置input type="text"的属性
+        $("#father .son").text("<h1>牛逼的文本设置</h1>");
+    });
+    //获取元素的高度和宽度
+    $("#btn14").on("click",function(){
+        $("#father").height(300).width(300);
+    });
+    $("#btn14").on("dblclick",function(){
+        console.log($("#father").height());
+        console.log($("#father").width());
+    });
+    //设置元素的位置
+    //不是针对有定位的父元素而是针对document的左上角
+    $("#btn15").on("click",function(){
+        //设置样式
+        $("#father .son ul").offset({
+                    top:0,
+                    left:-10
+                });
+        console.log($("#father .son ul").offset());
+    });
+    //给动态创建的元素绑定事件
+    $("#btn16").on("click",function(){
+        //动态创建元素
+        $("#father").html("<p>这是动态创建的元素</p>");
+        //绑定事件
+        $("#father").on("click","p",function(){
+            alert("风花雪月");
+        });
+    });
+</script>
+</body>
+</html>
