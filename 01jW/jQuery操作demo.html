@@ -63,6 +63,7 @@
 <button id="btn14">获取高度和宽度</button>
 <button id="btn15">设置元素的位置</button>
 <button id="btn16">绑定动态创建的元素</button>
+<button id="btn17">jQuery对象Dom对象转换</button>
 
 
 <script>
@@ -238,6 +239,13 @@
         $("#father").on("click","p",function(){
             alert("风花雪月");
         });
+    });
+    //jQuery对象和dom对象的互相转换
+    $("#btn17").on("click",function(){
+        var father = document.getElementById("father");
+        console.log($(father));
+        console.log($(father)[0]);
+        console.log($(father).get(0));
     });
 </script>
 </body>
