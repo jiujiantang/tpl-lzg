@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            height: 2000px;
+            margin: 0;
+            padding: 0;
+            background-color: #F7F7F7;
+        }
+
+        form {
+            max-width: 640px;
+            width: 100%;
+            margin: 32px auto 0;
+            font-size: 32px;
+        }
+
+        label {
+            display: block;
+            margin: 30px 0;
+        }
+
+        input {
+            width: 100%;
+            height: 32px;
+            margin-top: 10px;
+            display: block;
+        }
+        header {
+            height: 100px;
+            width: 980px;
+            margin: 0 auto;
+            border: 1px solid #CCC;
+        }
+        nav {
+            background-color: red;
+        }
+
+        section {
+            height: 2000px;
+            width: 980px;
+            margin: 0 auto;
+            background-color: pink;
+        }
+
+        article {
+            width: 800px;
+            height: 100%;
+            float: left;
+            background-color: skyblue;
+        }
+
+        aside {
+            width: 180px;
+            height: 100%;
+            float: right;
+        }
+
+        footer {
+            text-align: center;
+        }
+
+        progress {
+            height: 100px;
+            background-color: #FFF;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#">首页</a>
+            <a href="#">新闻</a>
+            <a href="#">资讯</a>
+        </nav>
+    </header>
+    <section class="container">
+        <article>
+            <figure>
+                <figcaption>这是图片的描述信息</figcaption>
+            </figure>
+            <!--表单S-->
+            <form action="">
+                <!--fieldset是一个边框的简单样式,自带换行格式-->
+                <fieldset>
+                    <!--legend是标题-->
+                    <legend>表单</legend>
+                    <!-- <label> 标签的 for 属性应当与相关元素的 id 属性相同。-->
+                    <label for="demo">
+                       email: <input id="demo" type="email"/>
+                    </label>
+                         tel: <input type="tel"/>
+                         number: <input type="number"/>
+                         color: <input id="color" type="color"/>
+                         range: <input type="range" value="50"/>
+                         time: <input type="time"/>
+                         date: <input type="date"/>
+                         dateTime: <input type="datetime"/>
+                         month: <input type="month"/>
+                         week: <input type="week"/>
+                    <input id="submit" type="submit"/>
+                </fieldset>
+            </form>
+            <!--表单E-->
+            <!--个人简介B-->
+            <form action="">
+                <label for="">
+                    姓名：<input type="text" name="name"/>
+                </label>
+                <label for="">
+                    省份：<select name="area">
+                        <option value="1">河北省</option>
+                        <option value="2">湖南省</option>
+                        <option value="3">广东省</option>
+                    </select>
+                </label>
+                <label for="">
+                    课程：<input type="text" list="course"/>
+                </label>
+                <datalist id="course">
+                    <option value="php1"></option>
+                    <option value="php2"></option>
+                    <option value="php3"></option>
+                    <option value="php4"></option>
+                    <option value="php5"></option>
+                    <option value="php6"></option>
+                </datalist>
+                <label>
+                    加密类型：<keygen name="anquan">
+                </label>
+                <label for="">
+                    结果：<output>一些结果</output>
+                </label>
+                <label for="">
+                    度量器：<meter min="0" max="100" low="60" high="80" value="50"></meter>
+                    度量器：<meter min="0" max="100" low="60" high="80" value="70"></meter>
+                    度量器：<meter min="0" max="100" low="60" high="80" value="90"></meter>
+                </label>
+                <input type="submit"/>
+            </form>
+            <!--个人简介E-->
+            <!--多媒体B-->
+            <!--<audio src="./music/See You Again.mp3" controls autoplay loop=""></audio>-->
+            <!--<video src="./video/movie.mp4" width="900" controls></video>-->
+            <!--多媒体E-->
+            <!--h5DOM操作S-->
+            <ul>
+                <li>1</li>
+                <li class="avtive">2</li>
+                <li class="avtive">3</li>
+                <li>4</li>
+                <li>5</li>
+            </ul>
+            <!--h5DOM操作E-->
+        </article>
+        <aside>
+            <a href="">其他的文章</a>
+            <a href="">其他的文章</a>
+            <a href="">其他的文章</a>
+            <a href="">其他的文章</a>
+            <a href="">其他的文章</a>
+            <a href="">其他的文章</a>
+            <a href="">其他的文章</a>
+            <a href="">其他的文章</a>
+            <a href="">其他的文章</a>
+            <a href="">其他的文章</a>
+            <a href="">其他的文章</a>
+            <a href="">其他的文章</a>
+            <a href="">其他的文章</a>
+        </aside>
+    </section>
+    <footer>
+        <p>版权所有传智播客</p>
+    </footer>
+    <script>
+//        h5DOM操作s
+        var lis = document.getElementsByClassName("avtive");
+        lis[0].style.backgroundColor="red";
+        lis[1].style.backgroundColor="green";
+        var lis = document.querySelector("li");
+        lis.style.backgroundColor="yellow";
+        var lis = document.querySelectorAll("li");
+        lis[3].style.backgroundColor="blue";
+//       h5DOM操作e
+    </script>
+</body>
+</html>

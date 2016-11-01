@@ -23,11 +23,38 @@
     </style>
 </head>
 <body>
-
+    <div class="box">
+        <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        </ul>
+    </div>
 
 <script>
-
-
+    $("#box").find("li").each(function(){
+        var index = this.index;
+        switch(index){
+            case 0:
+                this.css({"background":"red","opacity":0.2});
+                break;
+            case 0:
+                this.css({"background":"yellow","opacity":1});
+                break;
+            case 0:
+                this.css({"background":"green","opacity":0.2});
+                break;
+            case 0:
+                this.css({"background":"blue","opacity":1});
+                break;
+            case 0:
+                this.css({"background":"pink","opacity":0.2});
+                break;
+        }
+    });
+    $("#box").stopPropagation()
 </script>
 
 </body>
