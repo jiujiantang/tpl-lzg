@@ -29,18 +29,20 @@
             margin-top: 10px;
             display: block;
         }
+
         header {
             height: 100px;
             width: 980px;
             margin: 0 auto;
             border: 1px solid #CCC;
         }
+
         nav {
             background-color: red;
         }
 
         section {
-            height: 2000px;
+            height: 4000px;
             width: 980px;
             margin: 0 auto;
             background-color: pink;
@@ -68,124 +70,293 @@
             background-color: #FFF;
             border-radius: 5px;
         }
+        .tuozhuai{
+            background: green;
+            display: inline-block;
+            border: solid 10px white;
+        }
+        .con{
+            /*margin-left: 10px;*/
+            background: gray;
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            border: solid 10px white;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#">首页</a>
-            <a href="#">新闻</a>
-            <a href="#">资讯</a>
-        </nav>
-    </header>
-    <section class="container">
-        <article>
-            <figure>
-                <figcaption>这是图片的描述信息</figcaption>
-            </figure>
-            <!--表单S-->
-            <form action="">
-                <!--fieldset是一个边框的简单样式,自带换行格式-->
-                <fieldset>
-                    <!--legend是标题-->
-                    <legend>表单</legend>
-                    <!-- <label> 标签的 for 属性应当与相关元素的 id 属性相同。-->
-                    <label for="demo">
-                       email: <input id="demo" type="email"/>
-                    </label>
-                         tel: <input type="tel"/>
-                         number: <input type="number"/>
-                         color: <input id="color" type="color"/>
-                         range: <input type="range" value="50"/>
-                         time: <input type="time"/>
-                         date: <input type="date"/>
-                         dateTime: <input type="datetime"/>
-                         month: <input type="month"/>
-                         week: <input type="week"/>
-                    <input id="submit" type="submit"/>
-                </fieldset>
-            </form>
-            <!--表单E-->
-            <!--个人简介B-->
-            <form action="">
-                <label for="">
-                    姓名：<input type="text" name="name"/>
+<header>
+    <nav>
+        <a href="#">首页</a>
+        <a href="#">新闻</a>
+        <a href="#">资讯</a>
+    </nav>
+</header>
+<section class="container">
+    <article>
+        <figure>
+            <figcaption>这是图片的描述信息</figcaption>
+        </figure>
+        <!--表单S-->
+        <form action="">
+            <!--fieldset是一个边框的简单样式,自带换行格式-->
+            <fieldset>
+                <!--legend是标题-->
+                <legend>表单</legend>
+                <!-- <label> 标签的 for 属性应当与相关元素的 id 属性相同。-->
+                <label for="demo">
+                    email: <input id="demo" type="email"/>
                 </label>
-                <label for="">
-                    省份：<select name="area">
-                        <option value="1">河北省</option>
-                        <option value="2">湖南省</option>
-                        <option value="3">广东省</option>
-                    </select>
-                </label>
-                <label for="">
-                    课程：<input type="text" list="course"/>
-                </label>
-                <datalist id="course">
-                    <option value="php1"></option>
-                    <option value="php2"></option>
-                    <option value="php3"></option>
-                    <option value="php4"></option>
-                    <option value="php5"></option>
-                    <option value="php6"></option>
-                </datalist>
-                <label>
-                    加密类型：<keygen name="anquan">
-                </label>
-                <label for="">
-                    结果：<output>一些结果</output>
-                </label>
-                <label for="">
-                    度量器：<meter min="0" max="100" low="60" high="80" value="50"></meter>
-                    度量器：<meter min="0" max="100" low="60" high="80" value="70"></meter>
-                    度量器：<meter min="0" max="100" low="60" high="80" value="90"></meter>
-                </label>
-                <input type="submit"/>
-            </form>
-            <!--个人简介E-->
-            <!--多媒体B-->
-            <!--<audio src="./music/See You Again.mp3" controls autoplay loop=""></audio>-->
-            <!--<video src="./video/movie.mp4" width="900" controls></video>-->
-            <!--多媒体E-->
-            <!--h5DOM操作S-->
-            <ul>
-                <li>1</li>
-                <li class="avtive">2</li>
-                <li class="avtive">3</li>
-                <li>4</li>
-                <li>5</li>
-            </ul>
-            <!--h5DOM操作E-->
-        </article>
-        <aside>
-            <a href="">其他的文章</a>
-            <a href="">其他的文章</a>
-            <a href="">其他的文章</a>
-            <a href="">其他的文章</a>
-            <a href="">其他的文章</a>
-            <a href="">其他的文章</a>
-            <a href="">其他的文章</a>
-            <a href="">其他的文章</a>
-            <a href="">其他的文章</a>
-            <a href="">其他的文章</a>
-            <a href="">其他的文章</a>
-            <a href="">其他的文章</a>
-            <a href="">其他的文章</a>
-        </aside>
-    </section>
-    <footer>
-        <p>版权所有传智播客</p>
-    </footer>
-    <script>
-//        h5DOM操作s
-        var lis = document.getElementsByClassName("avtive");
-        lis[0].style.backgroundColor="red";
-        lis[1].style.backgroundColor="green";
-        var lis = document.querySelector("li");
-        lis.style.backgroundColor="yellow";
-        var lis = document.querySelectorAll("li");
-        lis[3].style.backgroundColor="blue";
-//       h5DOM操作e
-    </script>
+                tel: <input type="tel"/>
+                number: <input type="number"/>
+                color: <input id="color" type="color"/>
+                range: <input type="range" value="50"/>
+                time: <input type="time"/>
+                date: <input type="date"/>
+                dateTime: <input type="datetime"/>
+                month: <input type="month"/>
+                week: <input type="week"/>
+                <input id="submit" type="submit"/>
+            </fieldset>
+        </form>
+        <!--表单E-->
+        <!--个人简介B-->
+        <form action="">
+            <label for="">
+                姓名：<input type="text" name="name"/>
+            </label>
+            <label for="">
+                省份：<select name="area">
+                <option value="1">河北省</option>
+                <option value="2">湖南省</option>
+                <option value="3">广东省</option>
+            </select>
+            </label>
+            <label for="">
+                课程：<input type="text" list="course"/>
+            </label>
+            <datalist id="course">
+                <option value="php1"></option>
+                <option value="php2"></option>
+                <option value="php3"></option>
+                <option value="php4"></option>
+                <option value="php5"></option>
+                <option value="php6"></option>
+            </datalist>
+            <label>
+                加密类型：
+                <keygen name="anquan">
+            </label>
+            <label for="">
+                结果：
+                <output>一些结果</output>
+            </label>
+            <label for="">
+                度量器：
+                <meter min="0" max="100" low="60" high="80" value="50"></meter>
+                度量器：
+                <meter min="0" max="100" low="60" high="80" value="70"></meter>
+                度量器：
+                <meter min="0" max="100" low="60" high="80" value="90"></meter>
+            </label>
+            <input type="submit"/>
+        </form>
+        <!--个人简介E-->
+        <!--多媒体B-->
+        <!--<audio src="./music/See You Again.mp3" controls autoplay loop=""></audio>-->
+        <!--<video src="./video/movie.mp4" width="900" controls></video>-->
+        <!--多媒体E-->
+        <!--h5DOM操作S-->
+        <ul>
+            <li>1</li>
+            <li class="avtive">2</li>
+            <li class="avtive">3</li>
+            <li>4</li>
+            <li>5</li>
+        </ul>
+        <!--h5DOM操作E-->
+        <!--h5ApiS -->
+        <div class="box">
+            <input type="button" class="open" value="全屏"/>
+            <input type="button" class="cancel" value="关闭"/>
+            <input type="button" class="check" value="是否全屏"/>
+        </div>
+        <!-- 文件读取s-->
+        <div>
+            <input type="file" multiple class="file"/>
+            <select name="" id="">
+                <option value="0">湖南省</option>
+                <option value="1">河南省</option>
+                <option value="2">海南省</option>
+            </select>
+            <img src="" id="img" alt=""/>
+        </div>
+        <!-- 文件读取e-->
+        <!--图片拖拽s-->
+        <div>
+            <a href="">我是默认可以被拖拽</a>
+            <img src="images/demo.png" alt="图片可以拖拽，可以禁止"/>
+            <div draggable="true" class="tuozhuai"  style="width:100px;height:100px;"></div>
+            <p class="text" style="display: inline-block">将文件拖到此处</p>
+            <div class="con"></div>
+        </div>
+        <!--图片拖拽e-->
+        <!--本地存储s-->
+        <div>
+            <p>
+                键：<input type="text" class="key"/>
+                值：<input type="text" class="val"/>
+                <input type="button" id="btnSet" value="设置"/>
+            </p>
+            <p>
+                <input type="button" id="btnSave" value="读取"/>
+            </p>
+            <p id="resultSave"></p>
+        </div>
+        <!--本地存储e-->
+        <!--h5ApiE -->
+    </article>
+    <aside>
+        <a href="">其他的文章</a>
+        <a href="">其他的文章</a>
+        <a href="">其他的文章</a>
+        <a href="">其他的文章</a>
+        <a href="">其他的文章</a>
+        <a href="">其他的文章</a>
+        <a href="">其他的文章</a>
+        <a href="">其他的文章</a>
+        <a href="">其他的文章</a>
+        <a href="">其他的文章</a>
+        <a href="">其他的文章</a>
+        <a href="">其他的文章</a>
+        <a href="">其他的文章</a>
+    </aside>
+</section>
+<footer>
+    <p>版权所有传智播客</p>
+</footer>
+<script src="js/jquery-1.12.2.js"></script>
+<script>
+    //        h5DOM操作s
+    var lis = document.getElementsByClassName("avtive");
+    lis[0].style.backgroundColor = "red";
+    lis[1].style.backgroundColor = "green";
+    var lis = document.querySelector("li");
+    lis.style.backgroundColor = "yellow";
+    var lis = document.querySelectorAll("li");
+    lis[3].style.backgroundColor = "blue";
+    //       h5DOM操作e
+    //h5ApI
+    //全屏
+    var open = document.querySelector(".open");
+    //关闭
+    var cancel = document.querySelector(".cancel");
+    //是否全屏
+    var check = document.querySelector(".check");
+    //盒子
+    var box = document.querySelector(".box");
+    //全屏绑定
+    open.onclick = function () {
+        //盒子全屏
+        //谷歌
+        box.webkitRequestFullScreen();
+//            //火狐
+//            box.mozRequestFullScreen();
+    };
+    //关闭全屏
+    cancel.onclick = function () {
+        //谷歌
+        document.webkitCancelFullScreen();
+//            //火狐
+//            document.mozCancelFullScreen();
+    };
+    //检测是否全屏
+    check.onclick = function () {
+        //这个方法只有谷歌浏览器器支持
+        alert(document.webkitIsFullScreen);
+//            alert(document.mozIsFullScreen);
+    };
+    //获取file表元素
+    var file = document.querySelector(".file");
+    //onchange 发生改变的时候会触发
+    file.onchange = function () {
+        var files = file.files;
+        console.log(files);
+        //获取第一个文件信息
+        var f = this.files[0];
+        //实例化一个读取器
+        var reader = new FileReader();
+        console.log(reader);
+        //读取第一个文件
+        reader.readAsDataURL(f);
+        //加载文件
+        reader.onload = function(){
+            //this.result为reader读取完文件信息后得到的文件
+            var img = document.querySelector("#img");
+            img.src = this.result;
+        };
+
+
+    };
+    //图片拖拽
+    var tz = document.querySelector(".tuozhuai");
+    //有拖拽，就触发
+    tz.addEventListener("drag",function(){
+        this.style.borderColor = "black";
+    });
+    //有触发之后,刚开始就会捕捉颜色
+    tz.addEventListener("dragstart",function(){
+        this.style.backgroundColor = "red";
+    });
+    //当光标离开盒子时，盒子会变色
+    tz.addEventListener("dragleave",function(){
+        this.style.backgroundColor = "yellow";
+    });
+    //dragend事件没有边界限制，当不拖拽就触发
+    tz.addEventListener("dragend",function(){
+        this.style.borderColor = "white";
+    });
+    //目标元素
+    var con =document.querySelector(".con");
+    //进入
+    con.addEventListener("dragenter",function(){
+        this.style.backgroundColor="red";
+        console.log("dragenter");
+    });
+//    over和drop必须同时使用
+    con.addEventListener("dragover",function(ev){
+        this.style.backgroundColor = "blue";
+        ev.preventDefault();
+    });
+//    drop
+    //addEventListener
+   con.addEventListener("drop",function(){
+       this.style.backgroundColor = "yellow";
+   });
+//cookie的解析
+    //获取cookie
+//    var cookie = document.cookie;
+    var cookie = 'aliyun_choice=CN; cna=+PoAEOLf3k4CAQ6CcA48sRZg; login_aliyunid="b****@aliyun.com"; aliyun_country=CN; aliyun_site=CN; _ga=GA1.2.2036720058.1467616517; l=Arm5UIxRt2E/bvPck7ByasI0SS-TQa14; isg=Aqys-LaS1wUP38M5u9h1XozsfYp-DBoKYOm8_QbtP9f6EU0bLnVAnwmnR25T; consoleVmlistCity=%22cn-beijing%22; _umdata=0823A424438F76ABF4B0A4E3400702D84E2090325C1CE297013745EAB233F47FB3D29F64B044AE4C5520C6FC9A11CD324CD9406EE4ECD73F2E138E0B1792B71730C6BE59A07B417394C45F7742899DFA736CF0CD714D7337BEC82FDC462A70AF; l=Atvb7xk5davh8BH2ZWZwcPJ/6zVFsO-y; isg=AkVFsE1Nvr6gxZpiul9std1jVIEMb_mUcVYFxkeqAXyL3mVQD1IJZNO8nrXS';
+    //字符串拆分
+    var res = cookie.split(";");
+    //打印
+    console.log(res);
+    //本地存储
+    //读取
+    $("#btnSave").on("click",function(){
+        var text = window.sessionStorage.getItem("text");
+//        var text = window.localStorage.getItem("text");
+        $("#resultSave").text(text);
+    });
+    //设置
+    $("#btnSet").on("click",function(){
+        console.log(123);
+        var key = $(this).parents("p").find(".key").val();
+        var val = $(this).parents("p").find(".val").val();
+        //设置值
+       window.localStorage.setItem(key,val);
+    });
+</script>
 </body>
 </html>

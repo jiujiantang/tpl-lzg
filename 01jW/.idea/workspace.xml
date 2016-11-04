@@ -61,16 +61,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="css.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/demo/旋转木马/css/css.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="1" selection-start-line="29" selection-start-column="0" selection-end-line="37" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="my.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/旋转木马/js/my.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -81,10 +71,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jQuery操作demo.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="jQuery操作demo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jQuery操作demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.92753625">
+            <state vertical-scroll-proportion="0.0">
               <caret line="249" column="0" selection-start-line="249" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
               <folding />
             </state>
@@ -104,7 +94,7 @@
       <file leaf-file-name="放大镜.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/放大镜/放大镜.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.827586">
+            <state vertical-scroll-proportion="0.0">
               <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
               <folding />
             </state>
@@ -114,9 +104,66 @@
       <file leaf-file-name="html5标签的使用.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html5标签的使用.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.0">
-              <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="-19.172413">
+              <caret line="358" column="7" selection-start-line="358" selection-start-column="7" selection-end-line="358" selection-end-column="7" />
+              <folding>
+                <element signature="e#112#237#0" expanded="false" />
+                <element signature="e#252#380#0" expanded="false" />
+                <element signature="e#396#463#0" expanded="false" />
+                <element signature="e#479#599#0" expanded="false" />
+                <element signature="e#616#744#0" expanded="false" />
+                <element signature="e#758#804#0" expanded="false" />
+                <element signature="e#1112#1201#0" expanded="false" />
+                <element signature="e#1218#1261#0" expanded="false" />
+                <element signature="e#1280#1386#0" expanded="false" />
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#figure#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#form#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#fieldset#0;n#form#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#label#0;n#fieldset#0;n#form#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#label#0;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#label#1;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#select#0;n#label#1;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#label#2;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#datalist#0;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#label#3;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#keygen#0;n#label#3;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#label#4;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#label#5;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#ul#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#select#0;n#div#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#div#2;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#aside#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#7068#7085#0" expanded="false" />
+                <element signature="e#7374#7509#0" expanded="false" />
+                <element signature="e#7384#7390#0" expanded="false" />
+                <element signature="e#7443#7461#0" expanded="false" />
+                <element signature="e#7555#7683#0" expanded="false" />
+                <element signature="e#7613#7631#0" expanded="false" />
+                <element signature="e#7730#7853#0" expanded="false" />
+                <element signature="e#7977#8432#0" expanded="false" />
+                <element signature="e#8277#8423#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="css3标签的使用.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/css3标签的使用.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.05035971">
+              <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -173,6 +220,7 @@
         <option value="$PROJECT_DIR$/jQuery操作demo.html" />
         <option value="$PROJECT_DIR$/test.html" />
         <option value="$PROJECT_DIR$/html5标签的使用.html" />
+        <option value="$PROJECT_DIR$/css3标签的使用.html" />
       </list>
     </option>
   </component>
@@ -184,10 +232,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="527" />
-    <option name="y" value="25" />
-    <option name="width" value="635" />
-    <option name="height" value="750" />
+    <option name="x" value="544" />
+    <option name="y" value="43" />
+    <option name="width" value="594" />
+    <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -252,21 +300,22 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.lastSelected" value="configurable.group.appearance" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="E:/01黑马就业班正式上课内容a/25html5/02_day{网络、拖拽、视频、地理定位、web存储、应用缓存}/03-源代码" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -331,10 +380,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="527" y="25" width="635" height="750" extended-state="1" />
+    <frame x="544" y="43" width="594" height="754" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45210084" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3379397" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -376,6 +425,14 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -386,19 +443,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="3" selection-start-line="49" selection-start-column="3" selection-end-line="49" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/demo/旋转木马/demo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="54" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -805,7 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="11" column="54" selection-start-line="11" selection-start-column="45" selection-end-line="11" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -887,25 +934,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/放大镜/放大镜.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.827586">
+        <state vertical-scroll-proportion="0.0">
           <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html5标签的使用.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.0">
-          <caret line="173" column="0" selection-start-line="173" selection-start-column="0" selection-end-line="174" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/jQuery操作demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.92753625">
+        <state vertical-scroll-proportion="0.0">
           <caret line="249" column="0" selection-start-line="249" selection-start-column="0" selection-end-line="250" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html5标签的使用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.172413">
+          <caret line="358" column="7" selection-start-line="358" selection-start-column="7" selection-end-line="358" selection-end-column="7" />
+          <folding>
+            <element signature="e#112#237#0" expanded="false" />
+            <element signature="e#252#380#0" expanded="false" />
+            <element signature="e#396#463#0" expanded="false" />
+            <element signature="e#479#599#0" expanded="false" />
+            <element signature="e#616#744#0" expanded="false" />
+            <element signature="e#758#804#0" expanded="false" />
+            <element signature="e#1112#1201#0" expanded="false" />
+            <element signature="e#1218#1261#0" expanded="false" />
+            <element signature="e#1280#1386#0" expanded="false" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#figure#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#fieldset#0;n#form#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#label#0;n#fieldset#0;n#form#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#label#0;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#label#1;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#select#0;n#label#1;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#label#2;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#datalist#0;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#label#3;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#keygen#0;n#label#3;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#label#4;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#label#5;n#form#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#ul#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#select#0;n#div#1;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#article#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#aside#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#7068#7085#0" expanded="false" />
+            <element signature="e#7374#7509#0" expanded="false" />
+            <element signature="e#7384#7390#0" expanded="false" />
+            <element signature="e#7443#7461#0" expanded="false" />
+            <element signature="e#7555#7683#0" expanded="false" />
+            <element signature="e#7613#7631#0" expanded="false" />
+            <element signature="e#7730#7853#0" expanded="false" />
+            <element signature="e#7977#8432#0" expanded="false" />
+            <element signature="e#8277#8423#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css3标签的使用.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.05035971">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

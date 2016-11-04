@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*属性选择器*/
+        [href] {
+            color: red;
+        }
+        /*以某个字符开头*/
+        [href^="a"] {
+            color: blue;
+        }
+        /*以某个字符结尾*/
+        [href$="mp3"] {
+            color: pink;
+        }
+        /*任何位置包含某一个字符*/
+        [href*="m"]{
+            color: yellow;
+        }
+        /*完全等于某个字符*/
+        [href="b.rmvb"]{
+            color: green;
+        }
+        /*测试伪元素选择器*/
+        /*before*/
+        /*必须要有content*/
+        /*创建出来的元素默认是行内元素*/
+        .testOne::before {
+            content:"";
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+        }
+        /*测试伪元素after*/
+        .testOne::after {
+            content:"";
+            display: block;
+            width: 100px;
+            height: 100px;
+            background: pink;
+        }
+        /*测试伪元素first_line*/
+        .testOne p::first-line {
+            color: green;
+        }
+        /*测试伪元素first_letter*/
+        .testOne p::first-letter {
+            color: red;
+        }
+        /*测试伪元素的选中样式*/
+        .testOne p::selection {
+            color: gray;
+            background: yellow;
+        }
+        /*测试文字阴影*/
+        .text_shadow {
+            margin: 0 auto;
+            width: 200px;
+            height: 100px;
+            background: gray;
+        }
+        .text_shadow p:nth-child(1) {
+            color: #707070;
+            font-size: 30px;
+            text-align: center;
+            margin: 0 auto;
+            text-shadow: -1px -1px 4px black,
+            1px 1px 4px white;
+        }
+        .text_shadow p:nth-child(2) {
+              color: #898989;
+              font-size: 30px;
+              text-align: center;
+              text-shadow: 1px 1px 4px black,
+              -1px -1px 4px white;
+        }
+        .radius {
+            margin: 0 auto;
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            border-radius: 50px;
+            position: relative;
+        }
+        .face {
+            margin: 0 auto;
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 57px;
+            position: relative;
+            top: 17px;
+        }
+        .nose {
+            margin: 0 auto;
+            width: 10px;
+            height: 10px;
+            background: black;
+            position: absolute;
+            border-radius: 5px;
+            top: 40px;
+            left: 50%;
+            margin-left: -5px;
+        }
+        .nose::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            margin-left: 8px;
+            top: -3px;
+            width: 50px;
+            height: 50px;
+            /*border-radius: 50px;*/
+            border-top: solid 1px black ;
+            transform: rotate(-11deg);
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li>
+            <a href="a.mp4">a.mp4是一个视频文件</a>
+        </li>
+        <li>
+            <a href="b.txt">b.txt是一个文本文件</a>
+        </li>
+        <li>
+            <a href="a.mp3">a.mp3一个音频文件</a>
+        </li>
+        <li>
+            <a href="b.mp3">b.mp3一个音频文件</a>
+        </li>
+        <li>
+            <a href="a.rmvb">a.rmvb是一个视频文件</a>
+        </li>
+        <li>
+            <a href="b.rmvb">b.rmvb是一个视频文件</a>
+        </li>
+        <li>
+            <a >b.rmvb是一个视频文件</a>
+        </li>
+    </ul>
+</div>
+<div>
+    <!--伪元素选择器-->
+    <div class="testOne">
+        <p>我是初始元素<br>
+            我是第二行</p>
+        <p>I'm the first letter</p>
+    </div>
+</div>
+<div class="text_shadow">
+    <p>测试文字阴影</p>
+    <p>测试文字阴影</p>
+</div>
+<div class="radius">
+    <div class="face">
+        <div class="nose"></div>
+
+    </div>
+</div>
+</body>
+</html>
