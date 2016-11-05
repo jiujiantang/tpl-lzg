@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        html,body {
+            /*铺满全屏，html，body的高度都要设置成100%*/
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background-color: lightpink;
+            overflow: hidden;
+
+        }
+        .father {
+            position: relative;
+            height: 100%;
+            width: 100%;
+        }
+        .roket {
+            width: 100px;
+            height: 190px;
+            transition: all 3s ease;
+            position: absolute;
+            bottom: 0;
+            transform: translate(0px,0px) rotate(45deg);
+        }
+        body:hover .roket{
+            transform: translate(800px,-400px) rotate(0deg);
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="roket">
+        <img src="rocket.png" alt=""/>
+    </div>
+</div>
+
+</body>
+</html>

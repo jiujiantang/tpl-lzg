@@ -118,6 +118,196 @@
             border-top: solid 1px black ;
             transform: rotate(-11deg);
         }
+        /*opacity*/
+        .colorOne {
+            width: 100px;
+            height: 100px;
+            display: inline-block;
+            background: skyblue;
+            opacity: 0.3;
+        }
+        .colorOneSon {
+            margin: 0 auto;
+            width: 50px;
+            height: 50px;
+            /*display: inline-block;*/
+            background: red;
+        }
+        .colorTwo {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: pink;
+            margin: 0 10px;
+            padding: 4px;
+            border: solid 4px black;
+            box-sizing: border-box;
+            /*background-color: transparent;*/
+            background: transparent;
+        }
+        .colorThree {
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            margin: 0 10px;
+            padding: 4px;
+            border: solid 4px black;
+            box-sizing: border-box;
+            /*background-color: transparent;*/
+            /*background: rgba(0,0,0,0.8);*/
+            background: hsla(90,0%,50%,1);
+        }
+        .gradient {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background: green;
+            /*设置渐变*/
+            /*param1:变化的角度；prama2:变化的区间和颜色*/
+            background-image: linear-gradient(
+                    90deg,
+                    skyblue,
+                    pink 25%,
+                    yellow 50%,
+                    gray 75%,
+                    orange
+            );
+        }
+        .gradientTwo {
+            display: inline-block;
+            height: 100px;
+            width: 100px;
+            background: green;
+            /*设置渐变*/
+            /*param1:变化的角度；prama2:变化的区间和颜色*/
+            background-image: radial-gradient(
+                    100px at 50% 50%,
+                    skyblue,
+                    pink 25%,
+                    yellow 50%,
+                    gray 75%,
+                    orange
+            );
+        }
+        /*+ 过渡
+         该元素上必须有两种状态
+         可以过渡大部分属性*/
+        .transition {
+            color: white;
+            font-size: 20px;
+            /*display: inline-block;*/
+            width: 800px;
+            height: 100px;
+            background-color: red;
+            text-align: center;
+
+            transition: 1s,linear;
+
+        }
+        .transition span {
+            font-size: 50px;
+            color: #FFF;
+
+            margin: 0 34px;
+            opacity: 0.2;
+
+            /*通过transition 设置过渡效果*/
+
+            transition: all 3s;
+
+        }
+        .transition:hover{
+            background-color: skyblue;
+        }
+        .transition:hover span{
+            margin: 0 5px;
+            opacity: 1;
+        }
+        .scale {
+            margin: 10px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+            transition: all 1s ease;
+        }
+        .scale:hover {
+            transform: scale(-2);
+        }
+        .translate {
+            margin: 10px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            transition: all 1s ease;
+        }
+        .translate:hover {
+            transform: translate(100px,0);
+        }
+        .rotate {
+            margin: 10px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            transition: all 1s ease;
+            transform-origine: 0% 0%;
+        }
+        .rotate:hover {
+            transform: rotate(210deg);
+        }
+        .skew {
+            margin: 10px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            transition: all 1s ease;
+        }
+        .skew:hover {
+            transform: skew(45deg,45deg);
+        }
+        .rotateX {
+            margin: 10px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 50px 50px 0 0;
+            transition: all 1s ease;
+            transform-origine: 0 50%;
+        }
+        .rotateX:hover {
+            transform: rotateX(-180deg);
+        }
+        .rotateY {
+            margin: 10px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 50px 0 0 50px;
+            transition: all 1s ease;
+            transform-origine: 50% 0;
+        }
+        .rotateY:hover {
+            transform: rotateY(180deg);
+        }
+        .rotateZ {
+            margin: 10px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            border-radius: 0 50px 50px 0px;
+            transition: all 1s ease;
+            transform-origine: 50% 50%;
+        }
+        .rotateZ:hover {
+            transform: rotateZ(180deg);
+        }
     </style>
 </head>
 <body>
@@ -163,6 +353,31 @@
         <div class="nose"></div>
 
     </div>
+</div>
+<div class="color">
+    <div class="colorOne">
+        <div class="colorOneSon"></div>
+    </div>
+    <div class="colorTwo"></div>
+    <div class="colorThree"></div>
+</div>
+<div class="gradient"></div>
+<div class="gradientTwo"></div>
+<div class="transition">
+    <p><span>欢</span><span>迎</span><span>光</span><span>临</span></p>
+</div>
+<div>
+    <div class="2D">
+        <div class="scale"></div>
+        <div class="translate"></div>
+        <div class="rotate"></div>
+        <div class="skew"></div>
+    </div>
+</div>
+<div class="3D">
+    <div class="rotateX"></div>
+    <div class="rotateY"></div>
+    <div class="rotateZ"></div>
 </div>
 </body>
 </html>

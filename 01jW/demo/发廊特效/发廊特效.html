@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: darkgrey;
+        }
+        .hair {
+            margin: 100px auto;
+            width: 200px;
+            height: 50px;
+            background: white;
+            background-position: 0px;
+
+            background-image: linear-gradient(
+                135deg,
+                /*这样写就不会渐变*/
+                black 25%,
+                transparent 25%,
+                transparent 50%,
+                black 50%,
+                black 75%,
+                transparent 75%,
+                transparent 100%
+            );
+            /*定义背景的大小*/
+            background-size: 50px 50px;
+        }
+    </style>
+    <script src="../../js/jquery-1.12.2.js"></script>
+    <script>
+        //将js写在html文档前面就有可能找不到页面元素
+//       $(function(){
+//           console.log(123);
+//           var hair = document.querySelector("div");
+//           var targrt = 0;
+//           console.log(hair);
+//           var timer = setInterval(function(){
+//               targrt += 1;
+//               hair.style.backgroundPosition = targrt + "px";
+//           },15);
+//       });
+//        window.onload = function(){
+//            var hair = document.querySelector("div");
+//            var targrt = 0;
+//            console.log(hair);
+//            var timer = setInterval(function(){
+//                targrt += 1;
+//                hair.style.backgroundPosition = targrt + "px";
+//            },15);
+//        };
+        $(document).ready(function(){
+            var hair = document.querySelector("div");
+            var targrt = 0;
+            console.log(hair);
+            var timer = setInterval(function(){
+                targrt += 1;
+                hair.style.backgroundPosition = targrt + "px";
+            },15);
+        });
+    </script>
+</head>
+<body>
+<div class="hair"></div>
+</body>
+</html>

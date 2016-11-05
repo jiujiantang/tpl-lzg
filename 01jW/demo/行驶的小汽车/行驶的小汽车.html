@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: pink;
+        }
+
+        .logo {
+            width: 270px;
+            height: 129px;
+            margin: 100px auto;
+            background-image: url(./baidu.png);
+            background-position: 0 0;
+        }
+    </style>
+</head>
+<body>
+<div class="logo"></div>
+<script>
+    //不断行驶的小汽车
+    window.onload = function(){
+        var logo = document.querySelector(".logo");
+        var n=0;
+        setInterval(function(){
+            n++;
+            var offset = -270;
+            logo.style.backgroundPosition= n*offset +"px 0px";
+            if(n >= 64) n = 0;
+        },15);
+    };
+</script>
+</body>
+</html>
