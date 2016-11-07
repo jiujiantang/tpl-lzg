@@ -308,6 +308,46 @@
         .rotateZ:hover {
             transform: rotateZ(180deg);
         }
+        /*perspective:体现近大远小的效果*/
+        .perspective {
+            display:inline-block;
+        }
+        .perspectiveOne {
+            perspective: 1000px;
+        }
+        .perspectiveOneSon {
+            margin: 10px 20px;
+            display: inline-block;
+            width: 100px;
+            height: 100px;
+            background: skyblue;
+            transform: rotateY(90deg) translateZ(100px);
+            /*perspective: 1000px;*/
+        }
+        .preserve {
+            /*display: inline-block;*/
+            /*width: 100px;*/
+            /*height: 100px;*/
+            position: relative;
+            top: -100px;
+            left: 180px;
+            /*perspective: 1000px;*/
+            transform-style: preserve-3d;
+        }
+        .preserveSon {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100px;
+            height: 100px;
+        }
+        .preserveSon:nth-child(1){
+            background: mediumspringgreen;
+        }
+        .preserveSon:nth-child(2){
+            background: hotpink;
+            transform: rotateX(30deg) skew(30deg,0deg);
+        }
     </style>
 </head>
 <body>
@@ -378,6 +418,15 @@
     <div class="rotateX"></div>
     <div class="rotateY"></div>
     <div class="rotateZ"></div>
+</div>
+<div class="perspective">
+    <div class="perspectiveOne">
+        <div class="perspectiveOneSon"></div>
+    </div>
+</div>
+<div class="preserve">
+    <div class="preserveSon"></div>
+    <div class="preserveSon"></div>
 </div>
 </body>
 </html>

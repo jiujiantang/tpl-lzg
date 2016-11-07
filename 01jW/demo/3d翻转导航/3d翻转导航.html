@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*全屏*/
+        html,body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .stage {
+            height: 100%;
+            background-color: #FFB9B9;
+        }
+        .contain {
+            font: bold 80px "微软雅黑";
+            position: relative;
+            top: 30%;
+            left: 50%;
+            margin-left: -150px;
+            text-align: center;
+            width: 300px;
+            height: 200px;
+            /*background: #D6093C;*/
+            color: white;
+            transition: all 1s ease;
+            transform-origin: center;
+            transform-style: preserve-3d;
+        }
+        p {
+            height: 200px;
+            line-height: 200px;
+            margin: 0;
+        }
+        .top {
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            border-radius: 4px;
+            background: #D6093C;
+            transform-origin: bottom;
+            transform: translateY(-200px) translateZ(100px) rotateX(90deg);
+            /*border-bottom: solid 1px black;*/
+        }
+        .front {
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            border-radius: 4px;
+            background: #D6093C;
+            transform: translateZ(100px);
+        }
+        body:hover .contain {
+            transform: rotateX(-90deg);
+        }
+    </style>
+</head>
+<body>
+    <!-- 舞台-->
+    <div class="stage">
+        <!-- 容器 -->
+        <div class="contain">
+            <div class="front"><p>love</p></div>
+            <div class="top"><p>you</p></div>
+        </div>
+    </div>
+    
+</body>
+</html>

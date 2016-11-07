@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*全屏*/
+        html,body {
+            height: 100%;
+        }
+        /*舞台元素*/
+        .stage {
+            height: 100%;
+            background-color: hotpink;
+        }
+        .contain {
+            width: 100%;
+            position: relative;
+            top: 30%;
+            font: normal bold 120px "微软雅黑";
+            color: white;
+            text-align: center;
+            transform-style: preserve-3d;
+        }
+        .contain span::before {
+            position: absolute;
+            content: attr(text);
+            color: hotpink;
+            transform-origin: left;
+            transition: all 1s linear;
+        }
+        /*inset*/
+        body:hover .contain span::before {
+            transform: rotateY(-70deg);
+        }
+        /*body:hover .contain span {*/
+            /*box-shadow: -1px -1px 4px black ;*/
+        /*}*/
+    </style>
+</head>
+<body>
+    <!-- 舞台元素-->
+    <div class="stage">
+        <!-- 容器 -->
+        <div class="contain">
+            <span text="蓝">蓝</span>
+            <span text="瘦">瘦</span>
+            <span text="香">香</span>
+            <span text="菇">菇</spantext>
+        </div>
+    </div>
+</body>
+</html>
