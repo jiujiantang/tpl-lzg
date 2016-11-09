@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        /*全局*/
+        body,html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        /*舞台元素*/
+        .stage {
+            height: 100%;
+            background: #FFB9B9;
+        }
+        /*容器*/
+        .header {
+            display: flex;
+        }
+        .body {
+
+        }
+        .body .item {
+            display: flex;
+        }
+        .foot {
+
+        }
+        /*元素*/
+        .header a {
+            /*界面分成一份*/
+            flex: 1;
+        }
+        .header img {
+            width: 100%;
+            height: auto;
+            vertical-align: middle;
+            /*display: block;和vertical-align: middle;都可以解决图片底部的三像素*/
+        }
+        .body .item div:nth-child(1) {
+            background: skyblue;
+            flex: 1;
+        }
+        .body .item div:nth-child(2) {
+            display: flex;
+            background: hotpink;
+            flex: 2;
+            /*强制换行要写在父盒子里面*/
+            flex-wrap: wrap;
+        }
+        .sub a {
+            /*flex: 1;因为父元素已经设置了强制换行，所以当宽度超过父盒子的宽度以后就会换行，如果设置flex
+            为1，就会让元素仍然平分一行*/
+            width: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="stage">
+        <div class="header">
+            <a href="javascript:;">
+                <img src="banner.jpg" alt=""/>
+            </a>
+        </div>
+        <div class="body">
+            <!-- 导航菜单、先平分为两个部分-->
+            <div class="item">
+                <div class="pub"></div>
+                <div class="sub">
+                    <a href="javascript:;">海外酒店</a>
+                    <a href="javascript:;">团购</a>
+                    <a href="javascript:;">特惠酒店</a>
+                    <a href="javascript:;">客栈公寓</a>
+                </div>
+            </div>
+        </div>
+        <div class="foot"></div>
+    </div>
+</body>
+</html>
