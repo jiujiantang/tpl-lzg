@@ -21,26 +21,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="css3标签的使用.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css3标签的使用.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="77" column="26" selection-start-line="77" selection-start-column="12" selection-end-line="77" selection-end-column="26" />
-              <folding>
-                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#7;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#8;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#9;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#11;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="音乐盒.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/音乐盒/音乐盒.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -96,7 +76,7 @@
       <file leaf-file-name="整屏切换.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo/整屏切换/整屏切换.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.827586">
+            <state vertical-scroll-proportion="0.0">
               <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
@@ -106,18 +86,28 @@
       <file leaf-file-name="flash动画播放demo.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/flash动画播放demo.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.7586207">
+            <state vertical-scroll-proportion="0.0">
               <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="html5标签的使用.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="html5标签的使用.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html5标签的使用.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.0881295">
-              <caret line="95" column="8" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="8" />
+            <state vertical-scroll-proportion="-9.103448">
+              <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="phpGrammar.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/phpGrammar.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.27747747">
+              <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -181,6 +171,7 @@
         <option value="$PROJECT_DIR$/demo/多列布局/多列布局.html" />
         <option value="$PROJECT_DIR$/demo/切割轮播图/切割轮播图.html" />
         <option value="$PROJECT_DIR$/demo/整屏切换/整屏切换.html" />
+        <option value="$PROJECT_DIR$/phpGrammar.php" />
       </list>
     </option>
   </component>
@@ -192,9 +183,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="151" />
-    <option name="y" value="46" />
-    <option name="width" value="1102" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
     <option name="height" value="754" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -326,24 +317,24 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="151" y="46" width="1102" height="754" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25894538" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20491803" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="版本控制" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5007474" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.023131672" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="调试" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="运行" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -389,13 +380,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/myAnimation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/jWtools.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -671,7 +655,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="24" column="26" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -745,7 +728,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/demo/整屏切换/整屏切换.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.827586">
+        <state vertical-scroll-proportion="0.0">
           <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
         </state>
@@ -753,7 +736,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/flash动画播放demo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7586207">
+        <state vertical-scroll-proportion="0.0">
           <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
@@ -761,8 +744,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html5标签的使用.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.0881295">
-          <caret line="95" column="8" selection-start-line="95" selection-start-column="1" selection-end-line="95" selection-end-column="8" />
+        <state vertical-scroll-proportion="-9.103448">
+          <caret line="107" column="0" selection-start-line="107" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/phpGrammar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27747747">
+          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
           <folding />
         </state>
       </provider>
