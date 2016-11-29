@@ -7,13 +7,15 @@
         body {
             margin: 0;
             padding: 0;
-            background-color: pink;
+            background-color: #FFFFDD;
+			
         }
 
         .logo {
-            width: 270px;
-            height: 129px;
+            width: 130px;
+            height: 130px;
             margin: 100px auto;
+			border-radius:65px;
             background-image: url(./baidu.png);
             background-position: 0 0;
         }
@@ -29,7 +31,7 @@
         setInterval(function(){
             n++;
             var offset = -270;
-            logo.style.backgroundPosition= n*offset +"px 0px";
+            logo.style.backgroundPosition= -78+n*offset +"px 0px";
             if(n >= 64) n = 0;
         },15);
     };
