@@ -6,7 +6,7 @@
 </head>
 <body>
 	<?php
-	// php鍙橀噺鐨勫０鏄�
+	//   php鍙橀噺鐨勫０鏄�
 	// 瀛楃涓�
 	$str = '浣犲ソ涓栫晫';
 	echo $str;
