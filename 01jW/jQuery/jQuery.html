@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery源码解析</title>
+</head>
+<body>
+	<script>
+		//////////////////
+		//jQuery原码解析//  	  
+		//////////////////
+		
+		//将匿名函数放到小括号当中,这样匿名函数自执行,这样可以防止冲突
+        //从21行到94行定义了变量和函数
+        //prototype: 基于面向对象
+        //extend: jQuery的继承方法,方便后期去扩展
+        //jQuery.extend() : 提供扩展工具方法
+        //Sizzle : 复杂选择器的实现 实现比较复杂
+        //Callbacks : 回调对象 : 函数的统一管理
+        //Deferred : 延迟对象 : 对异步的管理
+        //Support : 功能检测的方法
+        //data() : 数据缓存 
+        //queue() : 队列管理 写运动的时候经常会用到
+        //attr() prop() val() addClass()等 : 对元素属性的操作
+        //on() trigger() : 事件操作的相关方法
+        //DOM操作 : 添加 删除 获取 包装 筛选
+        //css() : 针对样式的操作 兼容性 单位处理
+        //数据和ajax() : 实现ajax功能
+        //animate() : 运动的方法
+        //offset() : 位置与尺寸的一些方法
+        //JQ支持模块化的模式
+        //对外提供的接口
+        
+        //1. window作为参数传进来,就不用往外层去寻找window这个变量,这样更高效
+        //2. window传进来,变成压缩版本的时候就可以压缩成w或e等,匿名函数里面就不用再使用window了,直接用w或e,这样会非常的方便
+        //3. undefined 是window的一个属性,在某些浏览器(ie678)下是可以被修改的,jQuery为了防止undefined被修改,作为参数传进来,匿名函数内在寻找undefined的时候就不会寻找外面的被改写的undefined
+       (function( window , undefined) {
+			var  
+				// 1. 便于压缩 2.表义 可维护
+				rootjQuery,
+				// 跟DOM加载相关
+				readyList,
+				// 老版本的浏览器的undefined不支持对xmlNode节点的方法的判断
+				// 所以用typeof xmlNode.methon == "undefined"来代替xmlNode.methon == undefined;来进行判断
+				core_strundefined = typeof undefined,
+				// 存储变量让压缩更加方便 Location网址信息 docElem html标签
+				Location = window.Location,
+				document = window.document,
+				docElem = document.documentElement,
+				// jQuery防冲突
+				_jQuery = window.jQuery,
+				_$ = window.$,
+				// $.type()会用到的变量 做类型判断
+				class2type = {},
+				// 缓存数据有关
+				core_deleteIds = [];
+				// 存储局部变量,有利于压缩
+				core_concat = core_deleteIds.concat,
+				core_push = core_deleteIds.push,
+				core_slice = core_deleteIds.slice,
+				core_indexOf = core_deleteIds.indexOf,
+				core_toString = class2type.toString,
+				core_hasOwn = class2type.hasOwnProperty,
+				// 去除前后空格,支持新版本的浏览器
+				core_trim = core_version.trim,
+
+				// 代码片段的理解 
+				// 因为jQuery里面的方法调用是:jQuery().css()
+				// > function jQuery() {
+				// >    return new  jQuery.prototype.init();
+				// > }
+				// > jQuery.prototype.init = function () {...};
+				// > jQuery.prototype.css = function () {...};
+				// > jQuery.prototype.init.prototype = jQuery.prototype;//等号两边指向的是同一个对象(原型),所以两边对原型对象的更改或者访问会被同步
+				// > jQuery().css(); 
+				// 这样调用jQuery方法,就返回了一个初始化后的对象,这样使用起来就方便多了
+				// 理解这样的写法,jQuery里面有这么两句话: 
+				// 1. jQuery.fn = jQuery.prototype = {...}; ->说明fn就是原型
+				// 2. jQuery.fn.init.prototype = jQuery.fn; ->转化后: jQuery.prototype.init.prototype = jQuery.prototype;
+				// jQuery().css(); -> 说明 new jQuery.prototype.init();返回调用对象 -> 说明 jQuery.prototype.init是构造方法 
+				jQuery = function( selector, context){
+					return new jQuery.fn.init( selector, context, rootjQuery);
+				},
+				
+				// 正则
+				// ...
+				
+				//重定义原型 
+				jQuery.fn =  jQuery.prototype = {
+					// jQuery的版本号
+					jQuery: core_version,
+					// 由于字面量覆盖,constructor没有了指向
+					constructor: jQuery,
+					// 初始化函数
+				}
+
+			//对外提供的接口,挂载在windows下面
+			window.jQuery = window.$ = jQuery;
+			
+		})( window);
+		
+	</script>
+</body>
+</html>
