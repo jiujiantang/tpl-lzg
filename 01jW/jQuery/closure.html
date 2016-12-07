@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>闭包</title>
+</head>
+<body>
+	<script>
+		/////////////////////////////////////////////
+		//    demo1 -> 私有数据的外部访问及修改    //
+		/////////////////////////////////////////////
+		function foo () {
+			//私有数据的声明
+			var num1 = 123,	
+				num2 = 456;
+			//闭包定义 	
+			function get_num1() {
+				return num1;
+			}
+			function get_num2() {
+				return num2;
+			}
+			function set_num1(val) {
+				if(val>0) {
+					num1 = val;
+					console.log("@demo1:"+num1);
+				}
+			}
+			function set_num2(val) {
+				if(val>0) {
+					num2 = val;
+					console.log("@demo1:"+num2);
+				}
+			}
+			//返回闭包
+			return {
+				get_num1: get_num1,
+				set_num1: set_num1,
+				get_num2: get_num2,
+				set_num2: set_num2
+			}
+		}
+		//实例化
+		var f1 = foo();
+		//拿到f1对象的num1的值
+		var num1 = f1.get_num1();
+		//设置f1对象的num1的值
+		f1.set_num1(789);
+		//////////////////////END////////////////////////
+		
+		/////////////////////////////////////////////////
+		//    demo2 -> 私有数据的外部访问及修改进阶    //
+		/////////////////////////////////////////////////
+		function person(username, password) {
+			//预解析之前有变量声明: var username = username; var password = password;
+			//定义闭包
+			var flag = true;
+			function getUsername() {
+				return username;
+			}
+			function getPassword() {
+				return password;
+			}
+			function setUsername(val) {
+				username = val;
+			}
+			function setPassword(val) {
+				if (flag) {
+					password = val;
+					flag = false;
+					console.log("@demo2:密码被修改为"+password);
+				} else {
+					console.log("@demo2:密码不能被修改二次");
+				}
+
+			}
+			//返回
+			return {
+				getUsername : getUsername,
+				getPassword : getPassword,
+				setUsername : setUsername,
+				setPassword : setPassword
+			}
+		}
+		//@Test
+		var xiaohong = person("xiaohong", 123456);
+		console.log("@demo2:"+xiaohong.getUsername()+""+xiaohong.getPassword());
+		xiaohong.setPassword(654321);
+		xiaohong.setPassword(111111);
+		// 打印结果为:
+		// @demo2xiaohong123456
+		// @demo2:密码被修改为654321
+		// @demo2:密码不能被修改二次
+		//////////////////////END////////////////////
+		
+		/////////////////////////////////////////////
+		//    demo3 -> 带有事件移除与追加的对象    //
+		/////////////////////////////////////////////
+		// 沙盒模型 -> 匿名函数的自调用
+		var mytool = (function() {
+			// 保存私有数据的数组 
+			var data = [];
+			// 页面加载完以后,执行这些方法
+			window.onload = function() {
+				for (var i = 0; i < data.length; i++) {
+					data[i]();
+				}
+			};
+			// 闭包方法 -> 添加事件
+			function addEvent(fn) {
+				data.push(fn);
+			}
+			// 移除事件
+			function removeEvent(fn) {
+				for (var i = data.length; i >= 0; i--) {
+					if (data[i] === fn) {
+						data.splice(i,1);
+					}
+				}
+			}
+			return {
+				addEvent : addEvent,
+				removeEvent : removeEvent
+
+			};
+		})();
+
+		// 测试
+		mytool.addEvent( function () {
+			console.log( '我加载了1' );
+		} );
+		function f () {
+			console.log( '我加载了3' );
+		}
+		mytool.addEvent( f );
+		mytool.addEvent( function () {
+			console.log( '我加载了2' );
+		} );
+		mytool.removeEvent( f );
+		// 打印结果
+		// 我加载了1
+		// 我加载了2
+		////////////////END//////////////
+		
+		/////////////////////////////////
+		//    demo4 -> 缓存函数对象    //
+		/////////////////////////////////
+		// 缓存数据的结构
+		// 由于需要记录键的数量,并且需要记录加载数据的先后顺序所以声明一个有序数组
+		// > var cache = (function() {
+		// >    var data = [];
+		// >    function cache ( key. value) { 
+		// >    return cache;
+		// > })();
+		 function createCache() {
+			// 存放私有数据的数组,数组的最大长度
+			// 数组是用来记录数据的顺序
+			// cache里面缓存属性和值
+			// *调试小技巧,将data的var去掉,这样在控制台就能看到data的数据
+			var data = [], max = 3;
+			// 如果超出数组长度,按队列的方式加入,移除
+			function cache( key, value) {
+				if (data.length >= max) {
+					// 移除第一个元素,shift返回的是移除的那个元素
+					// delete将cache里面的temp属性删除掉
+					var temp = data.shift(); 
+					delete cache[ temp ]; 
+				}
+				// 将键保存到数组里面,做删除的依据
+				data.push( key );
+				// 将数据添加到缓存里面
+				cache[ key ] = value;
+			}
+			return cache;
+		}
+		var kvCache = createCache();
+		// 初始化数据
+		kvCache("name1",1);
+		kvCache("name2",2);
+		kvCache("name3",3);
+		kvCache("name4",4);
+		// 测试结果:
+		// name2:
+		// 2
+		// name3:
+		// 3
+		// name4:
+		// 4
+		////////////////END//////////////
+	</script>
+</body>
+</html>
+				
