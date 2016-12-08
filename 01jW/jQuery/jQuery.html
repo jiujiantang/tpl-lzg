@@ -54,6 +54,9 @@
 				class2type = {},
 				// 缓存数据有关
 				core_deleteIds = [];
+
+				core_version = "2.0.3",
+
 				// 存储局部变量,有利于压缩
 				core_concat = core_deleteIds.concat,
 				core_push = core_deleteIds.push,
@@ -89,9 +92,20 @@
 				jQuery.fn =  jQuery.prototype = {
 					// jQuery的版本号
 					jQuery: core_version,
-					// 由于字面量覆盖,constructor没有了指向
+					// 由于字面量对象的赋值,默认的constructor属性被覆盖了,所以要修正指向
 					constructor: jQuery,
-					// 初始化函数
+					// 初始化和参数的管理
+					init: function(selector, context, rootjQuery){
+						var match, elem;
+						//写错以后执行
+						if (!selector) {
+							return this;
+						}
+
+						if (typeof selector === "string") {
+							if (selector.charAt(0) === "<" && selector,charAt(selector.length - 1) ) {}
+						}
+					}
 				}
 
 			//对外提供的接口,挂载在windows下面
