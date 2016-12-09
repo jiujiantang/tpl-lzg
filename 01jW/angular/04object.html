@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>访问控制器中的对象</title>
+	<script src="js/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="myApp">
+		<div ng-controller="MyController">
+			<h1>{{ person }}</h1>
+			and their name:
+			<h2>{{ person.name }}</h2>
+		</div>
+	</div>
+	<script>
+	var app = angular.module('myApp', []);
+	app.controller('MyController',function($scope){
+		$scope.person = {
+			name: 'xiaodong'
+		};
+	});
+	</script>
+</body>
+</html>

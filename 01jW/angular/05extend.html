@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>继承</title>
+	<script src="js/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="myApp">
+		<div ng-controller="ParentController">
+			<div ng-controller="ChildController">
+				<!-- 绑定点击事件 -->
+				<a ng-click="sayHello()">Say hello</a>
+			</div>
+			{{ person }}
+		</div>
+	</div>
+	<script>
+		//模块注入
+		var app = angular.module('myApp', []);
+		//父级,创建person对象
+		app.controller('ParentController', function($scope){
+			$scope.person = {greeted: true};
+		});
+		//引用person对象
+		app.controller('ChildController', function($scope){
+			$scope.sayHello = function() {
+				$scope.person.name = 'xiaodong';
+			};
+		});
+	</script>
+</body>
+</html>
