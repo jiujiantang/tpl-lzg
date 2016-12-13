@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>插值操作</title>
+	<script src="js/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app="myApp">
+		<div ng-controller="MyController">
+			<input ng-model="to" type="email" placeholder="Recipient">
+			<textarea ng-model="emailBody"></textarea>
+			<pre>{{ previewText }}</pre>		
+		</div>
+	</div>
+	<script>
+	var app = angular.module('myApp', []);
+	app.controller('MyController',function($scope, $interpolate){
+		//注入$scope,$interpolate->我们同时拥有访问$scope和$interpolate服务的权限
+		//$interpolate是可以接受三个参数的函数,第一个参数是必须的
+		//text: 一个包含字符插值标记的字符串
+		//mustHaveExpression(布尔型): 设置为true时,当传入的字符串不含有表达式式时会返回null
+		//trustedContext
+		//设置$watch来监视邮件正文的变化
+		//设置监听
+		$scope.$watch('emailBody',function(body){
+			if (body) {
+				var templete = $interpolate(body);
+				$scope.previewText = templete({to: $scope.to});
+			}
+		});
+	});
+	</script>
+</body>
+</html>
