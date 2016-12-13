@@ -4,13 +4,24 @@
 	<meta charset="UTF-8">
 	<title>可复用折线图</title>
 	<style>
+		body {
+			background: black;
+		}
 		.brokenLine {
 			display: block;
 			margin: 0 auto;
 			margin-top: 10px;
 			width: 600px;
 			height: 300px;
-			background: pink;
+			background: white;
+		}
+		.pie {
+			display: block;
+			margin: 0 auto;
+			margin-top: 10px;
+			width: 600px;
+			height: 300px;
+			background: white;
 		}
 	</style>
 </head>
@@ -18,12 +29,19 @@
 	<div id="brokenLine" class="brokenLine">
 		<canvas id="canvas" width="600" height="300"></canvas>
 	</div>
+	<div id="pie" class="pie">
+		<canvas id="casPie" width="600" height="300"></canvas>
+	</div>
 	<!-- js -->
 	<!-- ctx.lineWidth = 0.1; 设置线条的粗细-->
 	<script>
 		var canvas = document.getElementById('canvas');
 		var ctx = canvas.getContext('2d');
 		var brokenLine = document.getElementById('brokenLine');
+
+		var casPie = document.getElementById('casPie');
+		var ctxPie = casPie.getContext('2d');
+		var pie = document.getElementById('pie'); 
 		
 		////////////////
 		// 绘制坐标系 //
@@ -71,12 +89,12 @@
 		ctx.closePath();
 		ctx.fill();
 		// 8. 绘制文字
-		ctx.font = '14px 微软雅黑';
+		ctx.font = '12px 微软雅黑';
 		ctx.fillText( 'o', x0-padding*.5, y0+padding*.5);
 		ctx.fillText('y', x0-padding*.5,padding*2+aHeight);
 		ctx.fillText('x',X+padding*.5-aWidth,y0+padding*.5);
 		// 9. 拿数据
-		var data = [[0,0], [ 10, 20 ], [ 15, 13 ], [ 17, 30 ], [ 30, 10 ], [ 20, 15 ] ];
+		var data = [[1,2], [ 10, 20 ], [ 15, 13 ], [ 17, 30 ], [ 30, 10 ], [ 20, 15 ] ];
 		// 10 在x轴上按大小排序 -> 冒泡排序 ->用于连线
 		// 最外层循环走一趟,为data.length-1趟
 		for (var i = 0; i < data.length-1; i++) {
@@ -140,6 +158,86 @@
 			ctx['lineTo']( v[ 0 ], v[ 1 ] );
 		});
 		ctx.stroke();
+
+		////////////////
+		// 绘制饼状图 //
+		////////////////
+		
+		// 1. 工具函数->弧度与角度的转换
+		function toAngle ( radian ) {
+			// 弧度转角度180/PI*弧度(radian)
+			return radian * 180 / Math.PI; 
+		}
+		function toRadian ( angle ) {
+			// 角度转弧度PI/180*角度(angle)
+			return angle * Math.PI / 180;
+		}
+		// 2. 确定圆心坐标和半径
+		var xPie0 = casPie.width/2,
+			yPie0 = casPie.height/2,
+			r = 100;
+		// 3. 测试数据
+		var dataPie = [[0.17,'学生'],[0.17,'家长'],[0.19,'教师'],[0.15,'职工'],[0.17,'领导'],[0.15,'亲友']];
+		// 4. 起始位置,每部分所占比重,颜色,直线超出部分的距离,线条的拐点,字体大小,字体padding
+		var start = -90;
+		var step;
+		var colorPie = ['red','green','blue','blueviolet','brown','yellow','cadetblue','chartreuse','chocolate','coral','cornflowerblue','cornsilk', 'crimson','cyan','darkblue','darkcyan','darkgoldenrod','darkgray','darkgreen','darkgrey','darkkhaki','darkmagenta'];
+		var distance = 10;
+		var xPie1,
+			yPie1;
+		ctxPie.font = '14px Consolas';
+		var ftPaddiX = 14/3,
+			ftPaddiY = 14/3;
+		// 5. 绘制饼图
+		for (var i = 0; i < dataPie.length; i++) {
+			step = dataPie[i][0]*360;
+			ctxPie.beginPath();
+
+			ctxPie.fillStyle = colorPie[ i ];
+
+			ctxPie.moveTo(xPie0,yPie0);
+			ctxPie.arc(xPie0,yPie0,r,
+					toRadian( start ),
+					toRadian( start + step )
+				);
+			ctxPie.closePath();
+			ctxPie.fill();
+			// 6. 绘制线条
+			ctxPie.beginPath();
+			ctxPie.strokeStyle = colorPie[ i ];
+			ctxPie.moveTo( xPie0, yPie0 );
+			// -. 三角函数
+			xPie1 = xPie0 + (r + distance) * Math.cos( toRadian(start + step / 2) );
+			yPie1 = yPie0 + (r + distance) * Math.sin( toRadian(start + step / 2) );
+			ctxPie.lineTo( xPie1, yPie1 ); 
+			// 7. 绘制文字的下划线
+			txtLine = ctxPie.measureText( dataPie[ i ][1] ).width + 3 * Math.abs(ftPaddiX);
+			if ( start + step / 2 < 270 && start + step / 2 > 90 ) {
+				txtLine = -ctxPie.measureText( dataPie[ i ][1] ).width - 3 * Math.abs(ftPaddiX);
+			}
+			ctxPie.lineTo( xPie1 + txtLine, yPie1 );
+			ctxPie.stroke();
+			// 8. 绘制文字 -> 判断文字绘制时相对拐点的左右
+			if ( start + step / 2 < 270 && start + step / 2 > 90 ) {
+				ctxPie.textAlign = 'right';
+				ftPaddiX = - 20 / 3;
+			}
+			// -. 不能用paddingX*-1来解决,因为paddingX是全局变量,循环赋值的时候前面的赋值对后面有影响
+			ctxPie.fillText( dataPie[ i ][0], xPie1 + 2*ftPaddiX, yPie1 - ftPaddiY );
+			// 9. 绘制说明
+			var infoPaddi = 20;
+
+			ctxPie.font = '8px Consolas';
+			ctxPie.textAlign = 'left';
+			ctxPie.beginPath();
+			ctxPie.moveTo(infoPaddi,infoPaddi);
+			ctxPie.fillRect(infoPaddi,infoPaddi*(i+1),8,8);
+
+			ctxPie.fillText( dataPie[ i ][1],infoPaddi+16, infoPaddi*(i+1)+8 );
+
+			// *. 绘制起点的叠加
+			start += step;
+		}
 	</script>
 </body>
 </html>
