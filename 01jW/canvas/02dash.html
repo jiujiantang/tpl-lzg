@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas的入门</title>
+</head>
+<body>
+	<canvas id="canvas" width="600" height="400"></canvas>
+	<script>
+		var cas = document.getElementById("canvas");
+		var ctx = cas.getContext('2d');
+
+		var step = 10,
+			start = 100;
+
+		//一直绘制下去
+		while (true) {
+			if (start >= 500) break;
+
+			ctx.moveTo(start, 100);//描点
+			ctx.lineTo(start+=step, 100);//描点
+
+			start+=step;
+		}
+
+		ctx.stroke();//描边绘图
+	</script>
+</body>
+</html>

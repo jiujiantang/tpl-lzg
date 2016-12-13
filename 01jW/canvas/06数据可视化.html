@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>可复用折线图</title>
+	<style>
+		.brokenLine {
+			display: block;
+			margin: 0 auto;
+			margin-top: 10px;
+			width: 600px;
+			height: 300px;
+			background: pink;
+		}
+	</style>
+</head>
+<body>
+	<div id="brokenLine" class="brokenLine">
+		<canvas id="canvas" width="600" height="300"></canvas>
+	</div>
+	<!-- js -->
+	<!-- ctx.lineWidth = 0.1; 设置线条的粗细-->
+	<script>
+		var canvas = document.getElementById('canvas');
+		var ctx = canvas.getContext('2d');
+		var brokenLine = document.getElementById('brokenLine');
+		
+		////////////////
+		// 绘制坐标系 //
+		////////////////
+	
+		// 1. 定义padding
+		var padding = 20;
+		// 2. 定义原点
+		var x0 = padding,
+			y0 = canvas.height-padding;
+		// 3. 描点
+		ctx.beginPath();
+		ctx.moveTo(x0,y0);
+		// ctx.arc(x0,y0,1,0,Math.PI*2);
+		ctx.stroke();
+		// 4. 定义箭头
+		var aWidth =  20,
+			aHeight = 10;
+		// 5. 定义轴长,描点区域
+		var X = canvas.width-padding*2,
+			Y = canvas.height-padding*2;
+		var maxX = canvas.width-padding*2-aWidth,
+			maxY = canvas.height-padding*2-aWidth; 
+		// 6. 画坐标轴
+		ctx.beginPath();
+		ctx.moveTo(x0,y0);
+		ctx.lineTo(X+padding,y0);
+		ctx.moveTo(x0,y0);
+		ctx.lineTo(x0,padding);
+		ctx.stroke();
+		// 7. 画x轴箭头
+		ctx.beginPath();
+		ctx.moveTo(X+padding-aWidth*.5,y0);
+		ctx.lineTo(X+padding-aWidth,y0-aHeight*.5);
+		ctx.lineTo(X+padding,y0);
+		ctx.lineTo(X+padding-aWidth,y0+aHeight*.5);
+		ctx.closePath();
+		ctx.fill();
+		// -. 画y轴箭头  
+		ctx.beginPath();
+		ctx.moveTo(padding,padding+aWidth*.5);  
+		ctx.lineTo(padding+aHeight*0.5,padding+aWidth);
+		ctx.lineTo(padding,padding);
+		ctx.lineTo(padding-aHeight*0.5,padding+aWidth);
+		ctx.closePath();
+		ctx.fill();
+		// 8. 绘制文字
+		ctx.font = '14px 微软雅黑';
+		ctx.fillText( 'o', x0-padding*.5, y0+padding*.5);
+		ctx.fillText('y', x0-padding*.5,padding*2+aHeight);
+		ctx.fillText('x',X+padding*.5-aWidth,y0+padding*.5);
+		// 9. 拿数据
+		var data = [[0,0], [ 10, 20 ], [ 15, 13 ], [ 17, 30 ], [ 30, 10 ], [ 20, 15 ] ];
+		// 10 在x轴上按大小排序 -> 冒泡排序 ->用于连线
+		// 最外层循环走一趟,为data.length-1趟
+		for (var i = 0; i < data.length-1; i++) {
+			//每一趟里面,再比较data.length-1-i次
+			for (var j = 0; j < data.length-1-i; j++) {
+				//判断是否交换
+				if (data[j][0] > data[j+1][0]) {
+					var t = data[j][0];
+					data[j][0] = data[j+1][0];
+					data[j+1][0] = t;
+				}
+			}
+		}
+		// 11 计算x和y的最大值,使点在坐标系里面被平铺
+		var dataMaxX = data[ 0 ][ 0 ];
+		for ( var i = 0; i < data.length; i++ ) {
+			if ( dataMaxX < data[ i ][ 0 ] ) {
+				dataMaxX = data[ i ][ 0 ]
+			}
+		}
+		var dataMaxY = data[ 0 ][ 1 ];
+		for ( var i = 0; i < data.length; i++ ) {
+			if ( dataMaxY < data[ i ][ 1 ] ) {
+				dataMaxY = data[ i ][ 1 ]
+			}
+		}
+		// 12 定义保存已经排好的点坐标的数组
+		var data2 = [];
+		// 13 循环绘制点
+		ctx.beginPath();
+		ctx.fillStyle = 'black';
+
+		for (var i = 0; i < data.length; i++) {
+			// 取x和y
+			var tmpX = data[i][0],
+				tmpY = data[i][1];
+
+			// 等比例转换成坐标系里面的坐标
+			tmpX = tmpX * maxX / dataMaxX;
+			tmpY = tmpY * maxY / dataMaxY;
+
+			// 将坐标原点从左上角转换到坐标轴的原点,以原点为参考画点
+			tmpX = tmpX + x0;
+			tmpY = y0 - tmpY;
+
+			// 保存按x轴排好序的坐标
+			data2.push( [ tmpX, tmpY ] );
+
+			// 画点
+			ctx.moveTo( tmpX - 4, tmpY - 4 );
+			ctx.lineTo( tmpX + 4, tmpY - 4 );
+			ctx.lineTo( tmpX + 4, tmpY + 4 );
+			ctx.lineTo( tmpX - 4, tmpY + 4 );
+			ctx.closePath();
+		}
+		ctx.fill();
+		// 14 连线
+		ctx.beginPath();
+		ctx.strokeStyle = 'black';
+		data2.forEach( function ( v ) {
+			ctx['lineTo']( v[ 0 ], v[ 1 ] );
+		});
+		ctx.stroke();
+	</script>
+</body>
+</html>

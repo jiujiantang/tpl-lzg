@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>canvas的坐标系和折线图</title>
+	<style>
+		#canvas {
+			border: solid 1px black;
+		}
+	</style>
+</head>
+<body>
+	<canvas id="canvas"  width="600" height="400"></canvas>
+	<script>
+		var cas = document.getElementById("canvas");
+		var ctx = cas.getContext('2d');
+
+		//(10,20) (15.13) (17,30)
+		var data = [[10,20],[15.13],[17,30]];
+		// var data = [10,20,15.13,17,30];
+
+		var paddingTop,
+			paddingRight,
+			paddingBottom,
+			paddingLeft,
+			padding;
+
+		padding = paddingTop=paddingRight=paddingBottom=paddingLeft=30;
+
+		var arrowHeight = 20,
+			arrowWidth	= 10;
+
+		var x0 = paddingLeft;
+		var y0 = cas.height - paddingBottom;
+
+		var maxX = cas.width - paddingRight*2 -arrowWidth,
+			maxY = cas.height - paddingRight*2 -arrowWidth;
+
+		//绘制坐标轴
+		ctx.moveTo(x0, paddingTop);
+		ctx.lineTo(x0, y0);
+		ctx.lineTo(cas.width - paddingRight, y0);
+
+		ctx.stroke();
+
+		ctx.beginPath();
+		// 绘制 x 的
+		ctx.moveTo( x0 + maxX + arrowHeight, y0 );
+		ctx.lineTo( x0 + maxX, y0 - arrowWidth / 2 );
+		ctx.lineTo( x0 + maxX + arrowHeight / 2, y0 );
+		ctx.lineTo( x0 + maxX, y0 + arrowWidth / 2 );
+		ctx.closePath();
+
+		// 绘制 y 的
+		ctx.moveTo( x0, padding );
+		ctx.lineTo( x0 - arrowWidth / 2, padding + arrowHeight );
+		ctx.lineTo( x0, padding + arrowHeight / 2 );
+		ctx.lineTo( x0 + arrowWidth / 2, padding + arrowHeight );
+		ctx.closePath();
+
+		ctx.fill();
+
+		//绘制点
+		ctx.beginPath();
+
+	 	ctx.fillStyle = 'red';
+
+		for ( var i = 0; i < data
+			length; i++ ) {
+			// 每一个点 都是 边长为 8 的小矩形
+			var tmpX = data[ i ][ 0 ],
+				tmpY = data[ i ][ 1 ];
+
+			tmpX = tmpX + x0;
+			tmpY = y0 - tmpY;
+
+			ctx.moveTo( tmpX - 4, tmpY - 4 );
+			ctx.lineTo( tmpX + 4, tmpY - 4 );
+			ctx.lineTo( tmpX + 4, tmpY + 4 );
+			ctx.lineTo( tmpX - 4, tmpY + 4 );
+			ctx.closePath();
+		}
+		ctx.fill();
+
+
+	</script>
+</body>
+</html>
+
+
+
+ 
