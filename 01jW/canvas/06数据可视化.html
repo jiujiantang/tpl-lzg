@@ -27,13 +27,10 @@
 </head>
 <body>
 	<div id="brokenLine" class="brokenLine">
-		<canvas id="canvas" width="600" height="300"></canvas>
-	</div>
+		<canvas id="canvas" width="600" height="300"></canvas></div>
 	<div id="pie" class="pie">
-		<canvas id="casPie" width="600" height="300"></canvas>
-	</div>
+		<canvas id="casPie" width="600" height="300"></canvas></div>
 	<!-- js -->
-	<!-- ctx.lineWidth = 0.1; 设置线条的粗细-->
 	<script>
 		var canvas = document.getElementById('canvas');
 		var ctx = canvas.getContext('2d');
@@ -96,11 +93,11 @@
 		// 9. 拿数据
 		var data = [[1,2], [ 10, 20 ], [ 15, 13 ], [ 17, 30 ], [ 30, 10 ], [ 20, 15 ] ];
 		// 10 在x轴上按大小排序 -> 冒泡排序 ->用于连线
-		// 最外层循环走一趟,为data.length-1趟
+		// -- 最外层循环走一趟,为data.length-1趟
 		for (var i = 0; i < data.length-1; i++) {
-			//每一趟里面,再比较data.length-1-i次
+			// 每一趟里面,再比较data.length-1-i次
 			for (var j = 0; j < data.length-1-i; j++) {
-				//判断是否交换
+				// 判断是否交换
 				if (data[j][0] > data[j+1][0]) {
 					var t = data[j][0];
 					data[j][0] = data[j+1][0];
@@ -165,11 +162,11 @@
 		
 		// 1. 工具函数->弧度与角度的转换
 		function toAngle ( radian ) {
-			// 弧度转角度180/PI*弧度(radian)
+			// -. 弧度转角度180/PI*弧度(radian)
 			return radian * 180 / Math.PI; 
 		}
 		function toRadian ( angle ) {
-			// 角度转弧度PI/180*角度(angle)
+			// -. 角度转弧度PI/180*角度(angle)
 			return angle * Math.PI / 180;
 		}
 		// 2. 确定圆心坐标和半径
@@ -235,7 +232,7 @@
 
 			ctxPie.fillText( dataPie[ i ][1],infoPaddi+16, infoPaddi*(i+1)+8 );
 
-			// *. 绘制起点的叠加
+			// -. 绘制起点的叠加
 			start += step;
 		}
 	</script>
