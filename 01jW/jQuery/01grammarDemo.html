@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery语法示例01</title>
+	<style>
+		.hclass {
+			font-weight: 900;
+			background: red;
+		}
+		a {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<div>demo
+		<a href="javascript:;">demo1</a>
+		<a href="javascript:;">demo2</a>
+	</div>
+	<div>demo
+		<a href="javascript:;">demo1</a>
+		<a href="javascript:;">demo2</a>
+	</div>
+	<div>demo
+		<a href="javascript:;">demo1</a>
+		<a href="javascript:;">demo2</a>
+	</div>
+	<div>demo
+		<a href="javascript:;">demo1</a>
+		<a href="javascript:;">demo2</a>
+	</div>
+	<div>demo
+		<a href="javascript:;">demo1</a>
+		<a href="javascript:;">demo2</a>
+	</div>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script>
+		// 下面这两种方法都可以
+		// demo1 
+		$("div").each(function () {
+			$(this).on("click",function(){
+				$(this).addClass(".hclass").children("a").show().end().siblings().removeClass(".hclass").children("a").hide();
+			});
+		});
+		// demo2
+		// $("div").on("click",function(){
+		// 		$(this).addClass("hclass").children("a").show().end().siblings().removeClass("hclass").children("a").hide();
+		// 	});
+	</script>
+</body>
+</html>

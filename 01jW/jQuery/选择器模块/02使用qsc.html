@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>使用qsc</title>
+</head>
+<body>
+	<div id="dv">div</div>
+	<div>
+		div
+		<p class="c">p1</p>
+		<p>p2</p>
+	</div>
+	<div class="c">div</div>
+	<p>p</p>
+	<p>p</p>
+	<script>
+		// h5中的新方法,但是ie678不兼容
+		var node1 = document.querySelectorAll("#dv");
+		var node2 = document.querySelectorAll("p,div");
+		var node3 = document.querySelectorAll(".c");
+
+		// 自己封装一个select
+		function select(select,result) {
+			result = result || [];
+
+			var nodeList =  document.querySelectorAll(select);
+			result.push.apply(result,nodeList);
+
+			return result;
+		}
+		var node4 = select("p");
+	</script>
+</body>
+</html>

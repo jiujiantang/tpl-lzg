@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>getByClass</title>
+</head>
+<body>
+	<div class="c"></div>
+	<div class="c1 c2 c"></div>
+	<div class="c1 c2"></div>
+	<script>
+		// ES3在字符串里面有indexOf方法.在ES5中数组也加入了indexOf方法,可以查询网站:Can I Use?
+		// "c"->" c "->var o = " c c1 "; o.indexOf(" c ")->0
+		function getByClass(className){
+			var list = document.getElementsByTagName('*');
+			var res = [];
+			for (var i = 0; i < list.length; i++) {
+				if((" "+list[i].className+" ").indexOf(" "+className+" ") > -1){
+						res.push(list[i]);
+				} 
+			}
+			return res;
+		}　
+		var list = getByClass("c");
+	</script>
+</body>
+</html>

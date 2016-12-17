@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>处理浏览器兼容升级</title>
+</head>
+<body>
+<div class="c"></div>
+<div class="c1"></div>
+<div class="c1"></div>
+<script>
+    // 这样写就不会修改内置原生方法
+    // 但是存在性能问题,所以需要处理一些细节
+    // 优化if判断,减少原型链的遍历 
+    ////////////////////存在性能问题/////////////////////
+	// function getByClass(className){
+	// 	if (document.getElementsByClassName(className)) {
+	// 		return document.getElementsByClassName(className);
+	// 	}else {
+	// 		var list = document.getElementsByTagName('*');
+	// 		var res = [];
+	// 		for (var i = 0; i < list.length; i++) {
+	// 			if((" "+list[i].className+" ").indexOf(" "+className+" ") > -1){
+	// 					res.push(list[i]);
+	// 			} 
+	// 		}
+	// 	return res;
+	// 	}
+	// }
+	// var o = getByClass("c1");
+	////////////////////升级->jQuery能力检测的原理////////////////////
+	// 方法能力检查
+	// -> 对方法功能的检查
+	// -> 对方法定义的检查 
+	// -> 一般提供一个对象 support,里面有很多属性,属性名方法名相同,但其值为boolean,表示该方法是否可用
+	var support = {};
+	// 以getElementsByClassName 为例
+	// 能力检测,检查函数是否存在,还检测了是否能达到我们使用的效果
+	// 设置一个场景,用来进行检测
+	support.getElementsByClassName = (function () {
+		var div = document.createElement("div");
+		// 判断是否时可用的方法
+		if ((typeof div.getElementsByClassName) === "function") {
+			// 能力检测
+			div.innerHTML = "<div class='c'></div>";
+			var res = div.getElementsByClassName("c");
+			if (res.length === 1 && res[0].className === "c") {
+				return true;
+			}
+		}
+		return false;
+	})();
+	/////////////////升级->jQuery方法定义检测的原理//////////////////
+	var support2 = {};
+	support2.sqa = (function () {
+		// 1
+		var str = document.querySelectorAll + "";
+		// return str.indexOf("[native code]") != -1;
+		// 2 正则表达式
+		// var rnative =//;....
+	})();
+
+		
+
+
+	////////////////////getByClass的最后兼容版///////////////////////
+	var support3 = {};
+	var renative = /\{\s*\[native/;
+	support3.getElementsByClassName = renative.test(getElementsByClassName+"");
+
+	function getByClass(className,node){
+		node = node || document;
+		var allElem,res = [],i;
+
+		if (support3.getElementsByClassName) {
+			return node.getElementsByClassName();
+		}else {
+			allElem = node.getElementsByTagName("*");
+			for (var i = 0; i < allElem.length; i++) {
+				if(allElem[i].className === className){
+						res.push(list[i]);
+				} 
+			}
+			return res;
+		}
+	}
+	var o = getByClass("c1");
+</script>
+</body>
+</html>

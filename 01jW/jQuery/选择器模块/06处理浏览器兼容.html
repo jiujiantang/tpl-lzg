@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>处理浏览器兼容</title>
+</head>
+<body>
+	<div class="c"></div>
+	<div></div>
+	<div></div>
+	<div></div>
+	<script>
+		// 处理浏览器不兼容的方法名
+		// document.getElementsByClassName
+		// arr.indexOf(数组)
+		// arr.filter
+		
+		if (!document.getElementsByClassName) {
+			document.getElementsByClassName = function getElementsByClassName(className) {
+				var list = document.getElementsByTagName('*');
+				var res = [];
+				for (var i = 0; i < list.length; i++) {
+					if((" "+list[i].className+" ").indexOf(" "+className+" ") > -1){
+							res.push(list[i]);
+					} 
+				}
+				return res;
+			};
+		}
+
+		var o = document.getElementsByClassName("c");
+
+		// 存在的问题: 不要修改内置原生对象
+		// 原因: 系统内置的方法也许不同于我们的实现方式
+		// 导致: 引入其他js库的时候,也许会检测某内置方法是否存在,如果检测到我们自己写的方法的时候,会将我们自己写的自己方法,这个时候就会出一些问题
+		// 不推荐使用
+	</script>
+</body>
+</html>

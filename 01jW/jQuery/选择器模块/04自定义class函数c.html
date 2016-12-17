@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>class</title>
+</head>
+<body>
+	<div class="c"></div>
+	<div class="c1 c2 c"></div>
+	<div class="c1 c2"></div>
+<script>
+	function getByClass(className){
+		var list = document.getElementsByTagName('*');
+		var res = [];
+		for (var i = 0; i < list.length; i++) {
+			if(list[i].className==className||contains(list[i].className,className)){
+					res.push(list[i]);
+			} 
+		}
+		return res;
+	}　
+	// 要保证class属性中一定有c
+	// c可能在中间
+	// c可能在两端
+	// 可以用indexOf方法 c在两端时判断1 或 length-2 是否为空格,c在中间,判断i-1 和 i+1是否为空格
+	// 使用正则
+	function contains(str1,str2) {
+		// return ().test(str1);
+		// var reg1 = /\s + str2 + \s/g;
+		// var reg2 = new RegExp("\\s + str2 + \\s","g");
+		//上面两句的意思是一致的,第一句用的是自变量,只是第二句里面传入的是字符串,需要"\"转意
+		var regexpStr = "^\\s"+str2+"\\s|\\s"+str2+"\\s|\\s"+str2+"$";
+		return (new RegExp(regexpStr,'g')).test(str1); 
+	}
+
+	var o = getByClass("c");
+</script>
+	
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>基本选择器的实现</title>
+</head>
+<div id="div">div</div>
+	<div>div</div>
+	<div>div</div>
+	<p class="p">p</p>
+	<p>p</p>
+<body>
+<script>
+	// id选择器
+	function byId(idName,result) {
+		result = result || [];
+		var find = document.getElementById(idName);
+		if(find) result.push(find);
+
+		return result;
+	}
+	var res = byId("div");
+	// tag选择器
+	function byTagName(tagName,result) {
+		result = result || [];
+		result.push.apply(result,document.getElementsByTagName(tagName));
+
+		return result;
+	}
+	var res2 = byTagName("p");
+	// class选择器
+	function byClassName(className,result) {
+		result = result || [];
+		result.push.apply(result,document.getElementsByClassName(className));
+
+		return result;
+	}
+	var res3 = byClassName("p");
+	// all选择器
+	function All() {
+		return document.getElementsByTagName("*");
+	}
+	var res4 = All();
+</script>
+</body>
+</html>

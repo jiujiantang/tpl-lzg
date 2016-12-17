@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>传统元素处理</title>
+</head>
+<body>
+	<div>div</div>
+	<div>div</div>
+	<div>div</div>
+	<p>p</p>
+	<p>p</p>
+</body>
+<script>
+	// 给页面的div和p添加边框,得到的是htmlCllection,不是数组,不能使用push等方法,但可以用下标取值
+	var divs = document.getElementsByTagName("div");
+	var ps = document.getElementsByTagName("p");
+
+	// 1. HTMLCollection是伪数组,没有数组的方法,则不能使用push()方法
+	// 2. 如果让HTMLcollection调用push方法就会报错:divs.push is not a function(…)
+	////////////////////3.尝试解决////////////////////
+	// var arr = [0,1,2,3,4,5]; 
+	// var arr1 = [6,7,8,9];	 
+	// [].push.apply(arr,arr1); 
+	// console.log(arr); 		 
+	// ============================ 
+	// 结果: [0,1,2,3,4,5,6,7,8,9]						 
+	// ============================
+	// [].push.apply(divs,ps);会报错
+	// ============================ 
+	// 报错: Cannot assign to read only property 'length' of object '#<NodeList>'
+	////////////////////4.最终解决办法////////////////
+	// arr.push是数组的一个方法,所以push方法要执行必须由arr点出来
+	// var arr = [];
+	// push.apply(arr,divs);
+	// push.apply(arr,ps);
+	// ============================ 
+	// 报错: ReferenceError: push is not defined
+	// ============================ 
+	// var arr = [];
+	// arr.push.apply(arr,divs);
+	// arr.push.apply(arr,ps);
+	// ============================ 
+	// 结果: [div, div, div, p, p]
+	//////////////////////////////////////////////////
+
+	// 1. 工具函数->打印调用方法的对象
+	function foo() {
+		console.log(this);
+	}
+	
+	// 2. 封装getElementsByTagName方法
+	function getTag(tagName,result) {
+		// 为了防止传入的result是undefined,这时候后面的[]就起作用了
+		result = result || [];
+		// 通过没有兼容问题的getElementsByTagName获取页面的所有dom元素
+		var tags = document.getElementsByTagName(tagName);
+		// 追加到数组
+		result.push.apply(result,tags);
+		return result;
+	}
+	///////////////////////test///////////////////////////
+	var arr = getTag("div");
+		arr = getTag("p",arr);
+	// ============================
+	// arr.forEach(function(v,k){
+	//     console.log(v+"和"+k);
+	// });
+	// ============================
+	// 结果: v是值,k是键
+	arr.forEach(function (v) {
+		v.style.border = "1px solid pink";
+	});
+	///////////////////////彩蛋///////////////////////////
+	foo.apply(arr);
+	
+</script>
+</html>
