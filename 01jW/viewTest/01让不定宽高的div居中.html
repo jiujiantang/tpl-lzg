@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>div居中</title>
+	<style>
+		.stage {
+			display: inline-block;
+			width: 600px;
+			height: 600px;
+			background: #000;
+			margin-left: 100px;
+		}
+		.father {
+			width: 400px;
+			height: 400px;
+			background: pink;
+			margin-left: 100px;
+			/*此元素会作为一个表格单元格显示*/
+			display: table-cell;
+			text-align: center;
+			vertical-align: middle;
+		}
+		.son {
+			width: 200px;
+			height: 200px;
+			background: skyblue;
+			display: inline-block;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+	<div class="stage">
+		<div class="father">
+			<div class="son"></div>
+		</div>
+	</div>
+</body>
+</html>
