@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+//    function each(array,func)
+//    {
+//        for(var i=0;i<array.length;i++)
+//        {
+//            func.call(array[i],i,array[i]);
+//        }
+//    }
+//    each([1,2,3,4],function(i,v){
+//        console.log(i+v);
+//    });
+    ////////////////////定义完整的each函数/////////////////////
+    function each (arr, func) {
+        var i ;
+        if (arr instanceof Array || arr.length >= 0) {
+            for(var i=0;i<arr.length;i++) {
+                func.call(arr[i],i,arr[i]);
+            }
+        }else {
+            for(i in arr) {
+                func.call(arr[i],i,arr[i]);
+            }
+        }
+        return arr;
+    }
+    each([1,2,3,4],function(i,v){
+        console.log(i+v);
+    });
+////////////////////定义完整的map函数/////////////////////
+</script>
+</body>
+</html>

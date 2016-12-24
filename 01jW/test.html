@@ -34,11 +34,15 @@
     </div>
 
 <script>
-    var o = document.getElementById("test");
-    console.log(o);
-    console.log([o]);
+    var toArray = function(h){
 
+        return [].slice.call(h,0);
+    }
+    var lis = document.getElementsByTagName("li");
+    console.log(lis);//HTMLCollection[5]
+    console.log(toArray(lis)[0]);//Array[5]
+    console.log(lis[0]);
 </script>
 
 </body>
-</html>
+</html>32

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		div {
+			border: 1px dotted blue;
+		}
+
+		#dv, .c {
+
+			width: 300px;
+			height: 150px;
+			border: 1px dashed red;
+			margin: 10px;
+			padding: 10px;
+		}
+	</style>
+	<script src="03forAppendItcast.js"></script>
+	<script>
+
+		itcast.fn.extend({
+			//itcast("div").appendTo(document.body)
+			//itcast("div").appendTo("p")后面可以是节点,选择器字符串,itcast对象
+			appendTo: function ( selector ) {
+				// 根据selector创建实例对象
+				// this指向调用该方法的实例
+				var iObj = this.constructor( selector );//this.constructor(selector)=itcast(selector)
+				// 创建空实例对象,传入的是null||'',返回的是this,this就是init函数对象
+				var newObj = this.constructor();//this.constructor() = itcast()
+				//console.log(newObj);//此时newObj是init{},里面是空的
+
+				//循环this(调用appendto方法的实例对象)里面所有元素
+				for ( var i = 0; i < this.length; i++ ) {
+					//循环iobj中所有的元素
+					for ( var j = 0; j < iObj.length; j++ ) {
+						//temp是复制的节点(this[i])
+						var temp =
+								//如果j是最后一次循环,就返回本体给j,否则返回复制体
+								j == iObj.length - 1
+									? this[ i ]
+									: this[ i ].cloneNode( true );
+						//newobj中添加temp节点
+						[].push.call( newObj, temp );// newObj.push(temp)
+						//添加子节点
+						iObj[ j ].appendChild( temp );
+						//console.log(iObj[j].appendChild(temp));//并不能打印出一个数组或伪数组
+					}
+				}
+				return newObj;//此时newObj是init{},里面包含了所有的dom元素,返回出去作为链式调用的基础
+			},
+			// 与appendTo作用相反的方法
+			append: function ( selector ) {
+
+				I( selector ).appendTo( this );
+
+				// var iObj = this.constructor( selector );
+				// for ( var i = 0; i < iObj.length; i++ ) {
+				// 	for ( var j = 0; j < this.length; j++ ) {
+				// 		var temp =
+				// 			i == iObj.length - 1 && j == this.length - 1
+				// 				? iObj[ i ]
+				// 				: iObj[ i ].cloneNode( true );
+				// 		this[ j ].appendChild( temp );
+				// 	}
+				// }
+				return this;
+			}
+		});
+
+
+	</script>
+</head>
+<body>
+	<div id="dv"></div>
+	<div class="c"></div>
+</body>
+<script>
+	
+	var i1 = I( '<div>123</div><div>123</div>' );
+
+	var i2 = i1.appendTo( 'div' );
+
+</script>
+</html>

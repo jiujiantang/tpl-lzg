@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<style>
+		div {
+			width: 400px;
+			height: 100px;
+			border: 1px solid red;
+			margin: 10px;
+		}
+	</style>
+	<script src="01forOnItcast.js"></script>
+	<script>
+	// 要求每一个 itcast 对象有一个 events 属性, 该属性存储事件与对应的函数数组
+	// 事件处理( onclick, addEventListener, attachEvent ) 不再是绑定,直接循环对应数组
+	// 需要修改构造函数, 来初始化事件数组对象
+	// 还需要添加事件处理函数
+	// 在itcast的原型对象上添加事件方法
+	itcast.fn.extend({
+		// type: 事件的类型 fn: 事件绑定方法
+		// 调用on的仍然是一个itcast对象(调用click的itcast对象 ps:之后又调用了on方法)
+		on: function ( type, fn ) {
+			// this.events[type]
+			// this -> 调用click的itcast对象 iObj
+			if ( !this.events[ type ] ) {
+				this.events[ type ] = [];
+
+				var that = this;
+				this.each(function () {
+					var f = function () {
+						for ( var i = 0; i < that.events[ type ].length; i++ ) {
+							// ? 执行
+							that.events[ type ][ i ]();
+						}
+
+					};
+
+					if ( this.addEventListener ) {
+						// 非ie
+						this.addEventListener( type, f );
+					} else {
+						// ie
+						this.attachEvent( 'on' + type, f );
+					}
+
+				});
+
+
+			}
+
+			this.events[ type ].push( fn );
+
+			return this;
+		},
+
+		// this -> 调用该方法的itcast对象
+		click: function ( fn ) {
+			// this -> 调用该方法的itcast对象
+			this.on( 'click', fn );
+		}
+	});
+
+
+	</script>
+</head>
+<body>
+	<div></div>
+	<div></div>
+</body>
+<script>
+	// var iObj = I(I( 'div' ))
+	var iObj = I( document.getElementsByTagName( 'div' )[ 0 ] )
+	// iObj.events = {};
+
+
+	// iObj.on( 'click', function () {
+	// 	alert( '点击 第一次' );
+	// });
+
+	// iObj.on( 'click', function () {
+	// 	alert( '点击 第222222222222222次' );
+	// });	
+
+
+	iObj.click( function () {
+		alert( '1111111111111111111' );
+	});
+	iObj.click( function () {
+		alert( '222222222222222' );
+	});
+
+
+</script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    // 将传入的标签字符将创建的dom对象封到数组里面
+    function parseHTML( html ) {
+        // 1, 临时容器
+        var div = document.createElement( 'div' );
+        // 2, 目标对象创建
+        div.innerHTML = html;
+        // 3, 拿创建的目标对象
+        var res = [];
+        for ( var i = 0; i < div.childNodes.length; i++ ) {
+            res.push( div.childNodes[ i ] );
+        }
+        // 4, 返回封了dom对象数组
+        return res;
+    }
+//    var list = parseHTML( '<div> 你好, 我是一个呗创建出来的 div </div><p>p</p>' )
+//    document.body.appendChild( list[ 0 ] )
+
+</script>
+</body>
+</html>

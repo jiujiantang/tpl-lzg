@@ -1,5 +1,21 @@
 // 提供接口
 var select =(function(){
+    ////////////////////////////push的兼容问题////////////////////////////
+    var push = [].push();
+    try{
+        var div = document.createElement("div");
+        div.innerHTML = "<p>123</p>";
+        var arr = [];
+        push.apply(arr,div.getElementsByTagName("p"));
+    }catch(e){
+        push = {
+            apply:function(array1,array2){
+                for(var i =0;i<array2.length;i++){
+                    array1[array1.length] = array2[i];
+                }
+            }
+        }
+    }
     ////////////////////////////正则表达式////////////////////////////
     // * 紧跟前面的一个字符或一组字符出现 0 次到多次
     // \s 空白字符, 包括空格, tab, 回车换行等
@@ -127,7 +143,7 @@ var select =(function(){
         for ( var j=0; j<selectors.length; j++) {
             for (var i =0;i<node.length; i++) {
                 // 内层标签搜索node范围内的外层提供的检索标签
-                arr.push.apply(arr,basicSlecter(selectors[j],node[i]));
+                push.apply(arr,basicSlecter(selectors[j],node[i]));
             }
             // node阶段保存检索结果
             node = arr;
@@ -135,7 +151,7 @@ var select =(function(){
             arr = [];
         }
         // 返回最终结果
-        results.push.apply(results, node);
+        push.apply(results, node);
         return results;
     }
     ///////////////////////////整合///////////////////////////
@@ -147,7 +163,7 @@ var select =(function(){
         if ( typeof selector != 'string') return results;
         // 通过检测.检测querySelectorAll能不能使用
         if ( support.qsa) {
-            results.push.apply(results,document.querySelectorAll(selector));
+            push.apply(results,document.querySelectorAll(selector));
         } else  {
             // 自己实现querySelectorAll
             for ( i=0; i <selectors.length; i++) {
@@ -156,7 +172,7 @@ var select =(function(){
                 // 通过处理后的字符串实现 基本选择器 对元素的检索
                 if (rbaseselector.test(subselector)) {
                     // 匹配通过,basicSelect进行分组提取
-                    results.push.apply(results,basicSlecter(subselector));
+                    push.apply(results,basicSlecter(subselector));
                 }else {
                     // 后代选择器
                     select2(subselector,results);

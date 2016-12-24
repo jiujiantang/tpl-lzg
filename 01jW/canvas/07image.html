@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<canvas id="canvas" class="canvas" width="600" height="300"></canvas>
+	<script>
+		var cas = document.getElementById('canvas');
+		var ctx = cas.getContext("2d");
+
+		var img = new Image();
+		img.src = "images/DMMban.png";
+
+		// void ctx.drawImage(image, sx, sy, sWidth, sHeight, dx, dy, dWidth, dHeight);
+		// sx
+		// 需要绘制到目标上下文中的，源图像的矩形选择框的左上角 X 坐标。
+		// sy
+		// 需要绘制到目标上下文中的，源图像的矩形选择框的左上角 Y 坐标。
+		// sWidth
+		// 需要绘制到目标上下文中的，源图像的矩形选择框的宽度。如果不说明，整个矩形从坐标的sx和sy开始，到图像的右下角结束。
+		// sHeight
+		// 需要绘制到目标上下文中的，源图像的矩形选择框的高度。
+		// dx
+		// 目标画布的左上角在目标canvas上 X 轴的位置。
+		// dy
+		// 目标画布的左上角在目标canvas上 Y 轴的位置。
+		// dWidth
+		// 在目标画布上绘制图像的宽度。 允许对绘制的图像进行缩放。 如果不说明， 在绘制时图片宽度不会缩放。
+		// dHeight
+		// 在目标画布上绘制图像的高度。 允许对绘制的图像进行缩放。 如果不说明， 在绘制时图片高度不会缩放。
+		
+		ctx.drawImage(img,100,100,200,200,100,100,200,200);
+
+		ctx.drawImg();
+	</script>
+</body>
+</html>
